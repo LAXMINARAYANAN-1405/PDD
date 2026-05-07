@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&amp;family=Public+Sans:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;family=Noto+Sans+Tamil:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d6dbd6",
+                        "outline-variant": "#bccac1",
+                        "surface": "#f5fbf5",
+                        "tertiary-container": "#427f6e",
+                        "secondary": "#276958",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#adf0da",
+                        "background": "#f5fbf5",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#002115",
+                        "inverse-surface": "#2c322e",
+                        "surface-container-low": "#eff5ef",
+                        "on-secondary-fixed": "#002018",
+                        "inverse-primary": "#68dbae",
+                        "surface-variant": "#dee4de",
+                        "primary": "#00694c",
+                        "tertiary-fixed": "#b0efdb",
+                        "surface-bright": "#f5fbf5",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#92d4be",
+                        "on-secondary-fixed-variant": "#025140",
+                        "on-secondary-container": "#2e6f5d",
+                        "tertiary": "#276656",
+                        "surface-container-highest": "#dee4de",
+                        "surface-container-high": "#e4eae4",
+                        "on-surface": "#171d1a",
+                        "on-tertiary-fixed": "#002019",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#095041",
+                        "surface-container": "#eaefea",
+                        "secondary-fixed": "#adf0da",
+                        "inverse-on-surface": "#ecf2ed",
+                        "surface-tint": "#006c4e",
+                        "primary-container": "#008560",
+                        "primary-fixed": "#86f8c9",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#f5fff7",
+                        "on-error-container": "#93000a",
+                        "on-background": "#171d1a",
+                        "tertiary-fixed-dim": "#94d3bf",
+                        "outline": "#6d7a73",
+                        "primary-fixed-dim": "#68dbae",
+                        "on-tertiary-container": "#f4fff9",
+                        "on-primary-fixed-variant": "#00513a",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#3d4943"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "gutter": "12px",
+                        "sm": "12px",
+                        "xl": "32px",
+                        "xs": "8px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "container-margin": "20px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "label-caps": ["Public Sans"],
+                        "h3": ["Poppins"],
+                        "tamil-body": ["Noto Sans Tamil"],
+                        "h2": ["Poppins"],
+                        "h1": ["Poppins"],
+                        "lexend": ["Lexend"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                        "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                        "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f5fbf5;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-surface select-none">
+<!-- TopAppBar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white flex justify-between items-center w-full px-5 py-3 h-16 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm fixed">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined hover:bg-emerald-500/20 transition-colors p-2 rounded-full Active: opacity-70 transition-opacity">menu</button>
+<h1 class="font-lexend font-bold tracking-tight text-lg text-white">About · செயலியைப் பற்றி</h1>
+</div>
+<button class="material-symbols-outlined hover:bg-emerald-500/20 transition-colors p-2 rounded-full Active: opacity-70 transition-opacity">account_circle</button>
+</header>
+<main class="pt-24 pb-32 px-5 max-w-md mx-auto">
+<!-- Center Top: Logo & Version -->
+<section class="flex flex-col items-center mb-xl">
+<div class="w-24 h-24 mb-4 rounded-3xl bg-white flex items-center justify-center shadow-sm border border-primary/10 overflow-hidden">
+<img alt="RightsQuest Logo" class="w-full h-full object-cover" data-alt="A professional and modern app logo for a legal awareness platform named RightsQuest. The icon features a stylized balance scale integrated with a digital quest map pin, using a sophisticated primary emerald green and white palette. The background is a clean, off-white studio setting with soft lighting, reflecting institutional trust and modern corporate accessibility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCU72frWGM_sACWgyF-KIRucDm194VjS6yhuY5FcvFON_sbuXq5U5tNb2XYrsvkGxHAepJynLr1PKASyw_wJA2GSOBjQcyyDDtlD7o4UAKVjQZVToc0hcUXCtQFm_kYzVa5jpoFp1BklXpYt-hDpq0O6N2_FOUCxx5n6Qi6A84vLQmos1J3TJ_b-TUQrJU5bBnduGkc-3jrHjmoaVJhTfOfLt_EmiWhvCN2eQ9skS8Ja_ulLwEUcv8rgO1pET4x4CXNPBS484aGBsC"/>
+</div>
+<h2 class="font-lexend font-black text-2xl text-primary tracking-tight">RightsQuest</h2>
+<p class="font-label-caps text-outline mt-1">Version: 1.0.0</p>
+</section>
+<!-- Content Cards -->
+<div class="space-y-lg">
+<!-- Card 1: Mission -->
+<div class="bg-white rounded-[14px] p-20 border border-on-surface/10 shadow-sm">
+<div class="flex flex-col gap-4">
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                        RightsQuest is a scenario-based legal awareness app that helps users understand real-life situations and possible actions.
+                    </p>
+<div class="h-[1px] bg-surface-container w-12"></div>
+<p class="font-tamil-body text-on-surface-variant leading-relaxed">
+                        RightsQuest என்பது நிஜ வாழ்க்கை சூழ்நிலைகள் மற்றும் சாத்தியமான நடவடிக்கைகளைப் புரிந்துகொள்ள உதவும் ஒரு சட்ட விழிப்புணர்வு செயலையாகும்.
+                    </p>
+</div>
+</div>
+<!-- Card 2: Disclaimer (Light Coral background substituted with theme-appropriate tonal shift) -->
+<div class="bg-error-container/30 rounded-[14px] p-20 border border-error/10">
+<div class="flex items-start gap-3 mb-3">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">warning</span>
+<h3 class="font-h3 text-error-container bg-error px-2 py-0.5 rounded text-xs uppercase tracking-widest font-bold">Disclaimer · மறுப்பு</h3>
+</div>
+<div class="flex flex-col gap-3">
+<p class="font-body-md text-on-error-container font-medium">
+                        This app provides general awareness only. It is not legal advice and should not replace consultation with a qualified legal professional.
+                    </p>
+<p class="font-tamil-body text-on-error-container">
+                        இந்த செயலி பொதுவான விழிப்புணர்வை மட்டுமே வழங்குகிறது. இது சட்ட ஆலோசனை அல்ல.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Bottom Links -->
+<footer class="mt-xl flex flex-col items-center gap-md">
+<div class="flex gap-lg">
+<a class="font-label-caps text-primary underline underline-offset-4 hover:text-primary-container transition-colors" href="#">Terms of Service</a>
+<a class="font-label-caps text-primary underline underline-offset-4 hover:text-primary-container transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="mt-4">
+<img alt="Institutional Stability Graphic" class="w-full h-32 object-cover rounded-xl opacity-40 grayscale contrast-125" data-alt="A subtle, high-key architectural photograph of a modern legal courthouse or institutional building facade. The image features strong vertical lines, pristine white concrete, and large glass windows reflecting a clear blue sky. The atmosphere is calm, authoritative, and bright, reinforcing the theme of justice and accessibility in a modern corporate style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6r9bpePtz5rGuBVILRGYipijsx_EJQmETkcgYASVYQFLt8jCTrjsPZzREOJ8LvNuBq4ZtFtZv_6Z2YV_QU21vfMDMzu4h7ti18MZlhSYl8-p_pvBK7xpfGgrxjuQKvZCUb9hI94qxX9fWtTCOxUYFh2CRm_1M5CJds--WQVl9M9l5araNslFqNjYecBqgAO2A1DlIlfRFBD8rJN7AmMSkYKbjsEwitXKeB52ZSd_CoSUtqvuOf5YwPKlvI_Tecq3Bpb77t3VQj0sI"/>
+</div>
+</footer>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-white dark:bg-slate-950 fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe z-50 rounded-t-2xl border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)]">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors Active: scale-95 duration-150">
+<span class="material-symbols-outlined">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors Active: scale-95 duration-150">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Saved</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors Active: scale-95 duration-150">
+<span class="material-symbols-outlined">language</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Language</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 Active: scale-95 duration-150">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">info</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Profile</span>
+</div>
+</nav>
+</body></html>

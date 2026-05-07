@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Exit Scenario - RightsQuest</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d6dbd6",
+                        "outline-variant": "#bccac1",
+                        "surface": "#f5fbf5",
+                        "tertiary-container": "#427f6e",
+                        "secondary": "#276958",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#adf0da",
+                        "background": "#f5fbf5",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#002115",
+                        "inverse-surface": "#2c322e",
+                        "surface-container-low": "#eff5ef",
+                        "on-secondary-fixed": "#002018",
+                        "inverse-primary": "#68dbae",
+                        "surface-variant": "#dee4de",
+                        "primary": "#00694c",
+                        "tertiary-fixed": "#b0efdb",
+                        "surface-bright": "#f5fbf5",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#92d4be",
+                        "on-secondary-fixed-variant": "#025140",
+                        "on-secondary-container": "#2e6f5d",
+                        "tertiary": "#276656",
+                        "surface-container-highest": "#dee4de",
+                        "surface-container-high": "#e4eae4",
+                        "on-surface": "#171d1a",
+                        "on-tertiary-fixed": "#002019",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#095041",
+                        "surface-container": "#eaefea",
+                        "secondary-fixed": "#adf0da",
+                        "inverse-on-surface": "#ecf2ed",
+                        "surface-tint": "#006c4e",
+                        "primary-container": "#008560",
+                        "primary-fixed": "#86f8c9",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#f5fff7",
+                        "on-error-container": "#93000a",
+                        "on-background": "#171d1a",
+                        "tertiary-fixed-dim": "#94d3bf",
+                        "outline": "#6d7a73",
+                        "primary-fixed-dim": "#68dbae",
+                        "on-tertiary-container": "#f4fff9",
+                        "on-primary-fixed-variant": "#00513a",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#3d4943"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "gutter": "12px",
+                        "sm": "12px",
+                        "xl": "32px",
+                        "xs": "8px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "container-margin": "20px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "label-caps": ["Public Sans"],
+                        "h3": ["Poppins"],
+                        "tamil-body": ["Noto Sans Tamil"],
+                        "h2": ["Poppins"],
+                        "h1": ["Poppins"],
+                        "lexend": ["Lexend"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                        "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                        "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f5fbf5;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-surface antialiased overflow-hidden">
+<!-- Background Content (Simulated Scenario Screen) -->
+<div class="fixed inset-0 z-0 flex flex-col">
+<!-- TopAppBar (From JSON) -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 font-lexend font-bold tracking-tight text-lg docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:bg-emerald-500/20 transition-colors p-2 rounded-full">menu</span>
+<span class="text-white font-lexend font-black text-xl">RightsQuest</span>
+</div>
+<span class="material-symbols-outlined cursor-pointer hover:bg-emerald-500/20 transition-colors p-2 rounded-full">account_circle</span>
+</header>
+<main class="flex-1 px-container-margin py-lg space-y-lg overflow-y-auto">
+<!-- Educational Progress Header -->
+<div class="space-y-xs">
+<p class="text-label-caps font-label-caps text-primary uppercase">Module 4: Workplace Rights</p>
+<h1 class="text-h2 font-h2 text-on-surface">The Unfair Dismissal Case</h1>
+<div class="h-2 w-full bg-primary/20 rounded-full">
+<div class="h-2 w-3/4 bg-primary rounded-full"></div>
+</div>
+</div>
+<!-- Bento Content Simulation -->
+<div class="grid grid-cols-1 gap-md">
+<div class="bg-surface-container-lowest border border-on-surface/10 p-md rounded-xl space-y-sm shadow-sm">
+<img alt="Scenario Character" class="w-full h-48 object-cover rounded-lg" data-alt="A professional woman in business attire looking thoughtfully at a computer screen in a bright, modern office with soft daylight. The environment is clean and corporate, featuring a palette of emerald greens and soft whites. The lighting is natural and high-key, conveying a sense of focused institutional trust and legal professionalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcgnRGTJ4mwljcRZC6DXZePJiblAN4ZIGU-SJnBKyuwXohfteB9y3GfR0zjf5uwA3FGPV-85W-Dw9GRvVdoTlOSq72cCGTHA7xF5g77bNVkIG8BRzk95EneO4dvBRgyWDqsX7jW0JIJAnR8M1PFtETILMZasG3XFg9Y8DY2Cggw0X8T939YJyn4rdPNTyNqKwTjBvYFVbF_-PRz8jchb_KIESLCiatEimMYXP9pGpskoQD-0N_vBlzmO-T0n_OjLDvSnKlZi8Y2w3r"/>
+<p class="text-body-md">Sarah has just been told her contract is ending early without clear reasoning. She needs to identify the correct legal steps to take next.</p>
+</div>
+<div class="grid grid-cols-2 gap-md">
+<div class="bg-secondary-container p-md rounded-xl text-on-secondary-container">
+<span class="material-symbols-outlined mb-xs">balance</span>
+<p class="font-bold text-label-caps">Evidence</p>
+<p class="text-sm">3/5 Collected</p>
+</div>
+<div class="bg-surface-container-high p-md rounded-xl text-on-surface">
+<span class="material-symbols-outlined mb-xs">timer</span>
+<p class="font-bold text-label-caps">Time</p>
+<p class="text-sm">08:45 Remaining</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Semi-transparent Dark Overlay -->
+<div class="fixed inset-0 z-[60] bg-on-surface/60 backdrop-blur-[2px] flex items-center justify-center px-container-margin">
+<!-- Centered Modal Card -->
+<div class="bg-white rounded-[14px] w-full max-w-sm shadow-[0_8px_32px_rgba(0,0,0,0.15)] overflow-hidden border border-on-surface/5">
+<div class="p-lg flex flex-col items-center text-center">
+<!-- Icon (Top Center) -->
+<div class="w-16 h-16 bg-error/10 rounded-full flex items-center justify-center mb-lg">
+<span class="material-symbols-outlined text-error text-[40px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<!-- Title & Subtitle -->
+<div class="space-y-xs mb-md">
+<h2 class="text-h3 font-h3 text-on-surface leading-tight">Are you sure you want to leave?</h2>
+<p class="text-tamil-body font-tamil-body text-primary font-medium">நீங்கள் வெளியேற விரும்புகிறீர்களா?</p>
+</div>
+<!-- Body Text -->
+<p class="text-body-md text-on-surface-variant mb-xl leading-relaxed">
+                    Your current progress in this scenario will not be saved.
+                </p>
+<!-- Actions -->
+<div class="flex flex-col w-full gap-sm">
+<!-- Button 1 (Outline Teal) -->
+<button class="w-full py-3.5 px-md rounded-lg border-2 border-primary text-primary font-bold transition-all active:scale-95 flex items-center justify-center gap-xs">
+<span class="text-body-md">Continue Scenario</span>
+<span class="text-sm opacity-50">•</span>
+<span class="font-tamil-body text-sm">தொடரவும்</span>
+</button>
+<!-- Button 2 (Solid Dark Gray) -->
+<button class="w-full py-3.5 px-md rounded-lg bg-inverse-surface text-inverse-on-surface font-bold transition-all active:scale-95 flex items-center justify-center gap-xs">
+<span class="text-body-md">Exit</span>
+<span class="text-sm opacity-50">•</span>
+<span class="font-tamil-body text-sm">வெளியேறு</span>
+</button>
+</div>
+</div>
+<!-- Modal Bottom Accent -->
+<div class="h-1.5 w-full bg-surface-container"></div>
+</div>
+</div>
+</body></html>

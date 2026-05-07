@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#f4fff9",
+                    "on-secondary-fixed": "#002018",
+                    "primary-fixed": "#86f8c9",
+                    "tertiary-fixed": "#b0efdb",
+                    "on-background": "#171d1a",
+                    "surface-container": "#eaefea",
+                    "secondary": "#276958",
+                    "on-secondary-fixed-variant": "#025140",
+                    "tertiary-container": "#427f6e",
+                    "tertiary-fixed-dim": "#94d3bf",
+                    "surface-bright": "#f5fbf5",
+                    "inverse-on-surface": "#ecf2ed",
+                    "surface-variant": "#dee4de",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#dee4de",
+                    "secondary-fixed-dim": "#92d4be",
+                    "on-primary-container": "#f5fff7",
+                    "background": "#f5fbf5",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#adf0da",
+                    "surface-container-low": "#eff5ef",
+                    "on-primary-fixed": "#002115",
+                    "primary-fixed-dim": "#68dbae",
+                    "surface-dim": "#d6dbd6",
+                    "secondary-container": "#adf0da",
+                    "on-primary-fixed-variant": "#00513a",
+                    "inverse-primary": "#68dbae",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#276656",
+                    "primary": "#00694c",
+                    "primary-container": "#008560",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e4eae4",
+                    "inverse-surface": "#2c322e",
+                    "on-secondary-container": "#2e6f5d",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f5fbf5",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#3d4943",
+                    "on-surface": "#171d1a",
+                    "surface-tint": "#006c4e",
+                    "outline": "#6d7a73",
+                    "outline-variant": "#bccac1",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#095041",
+                    "on-tertiary-fixed": "#002019"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "12px",
+                    "xs": "8px",
+                    "base": "4px",
+                    "lg": "24px",
+                    "gutter": "12px",
+                    "md": "16px",
+                    "xl": "32px",
+                    "container-margin": "20px"
+            },
+            "fontFamily": {
+                    "h3": ["Poppins"],
+                    "h1": ["Poppins"],
+                    "h2": ["Poppins"],
+                    "tamil-body": ["Noto Sans Tamil"],
+                    "label-caps": ["Public Sans"],
+                    "body-md": ["Public Sans"],
+                    "body-lg": ["Public Sans"],
+                    "lexend": ["Lexend"]
+            },
+            "fontSize": {
+                    "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .custom-amber { color: #D97706; }
+      .bg-custom-amber-light { background-color: #FFFBEB; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body-md text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar from JSON -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white opacity-80 transition-colors cursor-pointer">menu</span>
+<h1 class="font-lexend font-black text-xl tracking-tight text-white">RightsQuest</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-lexend font-bold tracking-tight text-lg text-white">The Outcome · முடிவு</span>
+<span class="material-symbols-outlined text-white opacity-80 transition-colors cursor-pointer">account_circle</span>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center px-container-margin py-lg space-y-lg max-w-2xl mx-auto w-full">
+<!-- Status Icon Section -->
+<div class="flex justify-center mt-xl">
+<div class="relative">
+<div class="absolute inset-0 bg-amber-400/20 blur-3xl rounded-full"></div>
+<span class="material-symbols-outlined text-[96px] text-amber-500 relative z-10" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+</div>
+<!-- Outcome Card -->
+<div class="bg-surface-container-lowest border border-on-background/10 rounded-[14px] p-xl w-full shadow-sm">
+<h2 class="font-h2 text-h2 custom-amber mb-md text-center">Wasted Effort · வீணான முயற்சி</h2>
+<div class="space-y-md border-b border-on-background/5 pb-lg">
+<div class="space-y-xs">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">English</p>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                        You argued, but the shopkeeper just ignored you. Without an official complaint or paper trail, shouting will not force a business to give you a refund.
+                    </p>
+</div>
+<div class="space-y-xs pt-xs">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">தமிழ்</p>
+<p class="font-tamil-body text-tamil-body text-on-surface leading-relaxed">
+                        நீங்கள் வாக்குவாதம் செய்தீர்கள், ஆனால் கடைக்காரர் உங்களைப் பொருட்படுத்தவில்லை. முறையான புகார் இல்லாமல், சத்தமிடுவதால் மட்டும் ஒரு நிறுவனம் உங்கள் பணத்தைத் திருப்பித் தராது.
+                    </p>
+</div>
+</div>
+<div class="pt-lg flex items-start gap-3">
+<span class="material-symbols-outlined text-outline text-md">info</span>
+<p class="font-body-md text-body-md text-outline italic leading-snug">
+                    Anger won't get your money back, but the law might. Let's look at the correct steps.
+                </p>
+</div>
+</div>
+<!-- Visual Context Image -->
+<div class="w-full h-48 rounded-xl overflow-hidden relative border border-on-background/10">
+<img class="w-full h-full object-cover" data-alt="A cinematic, high-contrast photograph of an empty, dimly lit storefront after hours, reflecting the mood of frustration and a missed opportunity for justice. The lighting is cold and professional with deep teal shadows and sharp highlights on a glass counter. The composition uses a wide-angle lens to emphasize the silence and isolation of the consumer's failed attempt at resolution. Minimalist and corporate visual style with institutional trust aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC13_8nn_anbHEzTRoA5dgLy41bXTdEuCgv7vJtxjctV95FkOuC3bT_l-9IDWcdvNj9MmMh00yFLOmNgu3uGC5ekeNWKPuRCXYcdQD8sLdnMojqz4GAwH9HdOIiR1qcF-zM03WZGuTW5gs4aVG36orS5PCJHhIws-te6mPYQvTsTgaT4umSs64m4C-p-7dBVZcdnHEKvSjW7r2sprZV12ZV7FAvkB5_LQLPtHkTXIenOg5O5r9WrWY2lXfv6ul6OywsoCtXQa_tr-hq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+<!-- Action Button -->
+<div class="w-full pt-md pb-xl">
+<button class="w-full flex items-center justify-center gap-2 border-2 border-primary text-primary font-bold py-md px-lg rounded-[10px] hover:bg-primary-container/10 transition-all active:scale-95">
+<span class="material-symbols-outlined">undo</span>
+<span class="font-h3 text-h3">Try another route · வேறு முடிவை முயற்சிக்கவும்</span>
+</button>
+</div>
+</main>
+<!-- Spacer for fixed bottom nav -->
+<div class="h-20"></div>
+<!-- BottomNavBar from JSON -->
+<nav class="bg-white dark:bg-slate-950 docked full-width bottom-0 z-50 rounded-t-2xl border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors cursor-pointer group">
+<span class="material-symbols-outlined group-active:scale-95 duration-150">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors cursor-pointer group">
+<span class="material-symbols-outlined group-active:scale-95 duration-150">bookmark</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Saved</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors cursor-pointer group">
+<span class="material-symbols-outlined group-active:scale-95 duration-150">translate</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Language</span>
+</div>
+</nav>
+</body></html>

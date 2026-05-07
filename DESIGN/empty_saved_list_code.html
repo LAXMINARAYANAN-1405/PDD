@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d6dbd6",
+                    "outline-variant": "#bccac1",
+                    "surface": "#f5fbf5",
+                    "tertiary-container": "#427f6e",
+                    "secondary": "#276958",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#adf0da",
+                    "background": "#f5fbf5",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#002115",
+                    "inverse-surface": "#2c322e",
+                    "surface-container-low": "#eff5ef",
+                    "on-secondary-fixed": "#002018",
+                    "inverse-primary": "#68dbae",
+                    "surface-variant": "#dee4de",
+                    "primary": "#00694c",
+                    "tertiary-fixed": "#b0efdb",
+                    "surface-bright": "#f5fbf5",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#92d4be",
+                    "on-secondary-fixed-variant": "#025140",
+                    "on-secondary-container": "#2e6f5d",
+                    "tertiary": "#276656",
+                    "surface-container-highest": "#dee4de",
+                    "surface-container-high": "#e4eae4",
+                    "on-surface": "#171d1a",
+                    "on-tertiary-fixed": "#002019",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#095041",
+                    "surface-container": "#eaefea",
+                    "secondary-fixed": "#adf0da",
+                    "inverse-on-surface": "#ecf2ed",
+                    "surface-tint": "#006c4e",
+                    "primary-container": "#008560",
+                    "primary-fixed": "#86f8c9",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#f5fff7",
+                    "on-error-container": "#93000a",
+                    "on-background": "#171d1a",
+                    "tertiary-fixed-dim": "#94d3bf",
+                    "outline": "#6d7a73",
+                    "primary-fixed-dim": "#68dbae",
+                    "on-tertiary-container": "#f4fff9",
+                    "on-primary-fixed-variant": "#00513a",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#3d4943"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "gutter": "12px",
+                    "sm": "12px",
+                    "xl": "32px",
+                    "xs": "8px",
+                    "md": "16px",
+                    "lg": "24px",
+                    "container-margin": "20px"
+            },
+            "fontFamily": {
+                    "body-md": ["Public Sans"],
+                    "body-lg": ["Public Sans"],
+                    "label-caps": ["Public Sans"],
+                    "h3": ["Poppins"],
+                    "tamil-body": ["Noto Sans Tamil"],
+                    "h2": ["Poppins"],
+                    "h1": ["Poppins"],
+                    "lexend": ["Lexend"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f5fbf5;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-background selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16 fixed top-0 z-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined hover:bg-emerald-500/20 transition-colors cursor-pointer p-2 rounded-full">menu</span>
+<h1 class="font-lexend font-bold tracking-tight text-lg">Saved Summaries · சேமிக்கப்பட்ட சுருக்கங்கள்</h1>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined hover:bg-emerald-500/20 transition-colors cursor-pointer p-2 rounded-full">account_circle</span>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="min-h-screen flex flex-col items-center justify-center px-container-margin pt-16 pb-20">
+<!-- Empty State Container -->
+<div class="w-full max-w-md text-center flex flex-col items-center space-y-lg">
+<!-- Graphic Element -->
+<div class="relative w-48 h-48 mb-xs flex items-center justify-center">
+<div class="absolute inset-0 bg-primary-container/5 rounded-full blur-3xl"></div>
+<span class="text-[96px] leading-none select-none">📭</span>
+</div>
+<!-- Text Content -->
+<div class="space-y-xs">
+<h2 class="font-h2 text-h2 text-on-surface">No saved summaries yet</h2>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant opacity-70">சேமிக்கப்பட்ட சுருக்கங்கள் எதுவும் இல்லை</p>
+<div class="pt-sm">
+<p class="font-body-md text-body-md text-outline max-w-[280px] mx-auto">
+                        Complete a scenario to generate and save your first legal reference document.
+                    </p>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="mt-lg w-full py-4 px-lg bg-primary text-on-primary rounded-xl font-body-md font-semibold shadow-md active:scale-95 transition-all duration-150 flex items-center justify-center gap-xs">
+                Go to Home · முகப்பிற்குச் செல்
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<!-- Decorative Illustration Card (Institutional Trust Theme) -->
+<div class="mt-xl w-full p-md bg-white border border-on-surface/10 rounded-xl flex items-center gap-md text-left">
+<div class="bg-primary-container/10 p-sm rounded-lg">
+<span class="material-symbols-outlined text-primary" data-weight="fill" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface uppercase opacity-60">Legal Tip</h4>
+<p class="text-[13px] text-on-surface-variant font-medium">Keep summaries for future legal consultations.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-white dark:bg-slate-950 fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] z-50 rounded-t-2xl">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Home</span>
+</a>
+<!-- Saved (ACTIVE) -->
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span class="font-lexend font-bold text-[10px] uppercase tracking-wider mt-1">Saved</span>
+</a>
+<!-- Language -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="translate">translate</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Language</span>
+</a>
+</nav>
+<!-- Image for decorative context (Not visible in provided spec, but added for branding depth) -->
+<div class="hidden">
+<img data-alt="A minimalist and authoritative digital illustration of a courtroom gavel resting on a stack of law books. The style is modern corporate with a color palette of deep emerald greens and warm off-whites. Lighting is soft and diffused, creating a trustworthy and institutional atmosphere suitable for a legal education platform. High-key reflections on polished wood surfaces." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH02E7e2nnL8zfjgRbTMdUvJzHP5zndX71XrvZQI1BIe9bUF9gkoFXWL_Ck-XLzHvPMtvRNBJA3glvOXvt0AdU77Og5ykoCX2okBrgvAYfJd64Zp7954sZE-zbibfUL_PZDEkcN7aeHpmCJIG2k8r9jMPmIf9yFmy3jLJiE56b8une5f1hv9iQizZgDLZBYzfCfKaPTgBj6S--e8e7TCXilDHO4ey6Qg-bNPNzY_K_wPYMsPnE9geHZc3UWgri4p03kJOpzwOjkbhv"/>
+</div>
+</body></html>

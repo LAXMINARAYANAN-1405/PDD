@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#adf0da",
+                      "on-tertiary-container": "#f4fff9",
+                      "on-surface-variant": "#3d4943",
+                      "error": "#ba1a1a",
+                      "surface": "#f5fbf5",
+                      "error-container": "#ffdad6",
+                      "surface-container-highest": "#dee4de",
+                      "primary": "#00694c",
+                      "on-error-container": "#93000a",
+                      "surface-variant": "#dee4de",
+                      "surface-container": "#eaefea",
+                      "outline-variant": "#bccac1",
+                      "surface-container-low": "#eff5ef",
+                      "on-primary-container": "#f5fff7",
+                      "on-surface": "#171d1a",
+                      "on-tertiary-fixed-variant": "#095041",
+                      "on-primary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#d6dbd6",
+                      "on-secondary-fixed": "#002018",
+                      "secondary-fixed-dim": "#92d4be",
+                      "on-secondary-container": "#2e6f5d",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed": "#b0efdb",
+                      "tertiary-fixed-dim": "#94d3bf",
+                      "inverse-primary": "#68dbae",
+                      "inverse-on-surface": "#ecf2ed",
+                      "on-background": "#171d1a",
+                      "tertiary": "#276656",
+                      "surface-container-high": "#e4eae4",
+                      "on-error": "#ffffff",
+                      "secondary": "#276958",
+                      "primary-fixed": "#86f8c9",
+                      "surface-tint": "#006c4e",
+                      "primary-container": "#008560",
+                      "on-primary-fixed": "#002115",
+                      "primary-fixed-dim": "#68dbae",
+                      "tertiary-container": "#427f6e",
+                      "background": "#f5fbf5",
+                      "surface-bright": "#f5fbf5",
+                      "inverse-surface": "#2c322e",
+                      "on-tertiary-fixed": "#002019",
+                      "secondary-fixed": "#adf0da",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed-variant": "#025140",
+                      "on-primary-fixed-variant": "#00513a",
+                      "outline": "#6d7a73"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "4px",
+                      "md": "16px",
+                      "gutter": "12px",
+                      "sm": "12px",
+                      "lg": "24px",
+                      "xl": "32px",
+                      "container-margin": "20px",
+                      "xs": "8px"
+              },
+              "fontFamily": {
+                      "tamil-body": ["Noto Sans Tamil"],
+                      "label-caps": ["Public Sans"],
+                      "h3": ["Poppins"],
+                      "h2": ["Poppins"],
+                      "body-md": ["Public Sans"],
+                      "h1": ["Poppins"],
+                      "body-lg": ["Public Sans"],
+                      "lexend": ["Lexend"]
+              },
+              "fontSize": {
+                      "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                      "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .paper-surface {
+            background-color: #F8F7F3;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="paper-surface text-on-surface min-h-screen flex flex-col font-body-md">
+<!-- TopAppBar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16 sticky">
+<div class="flex items-center gap-4">
+<button class="hover:bg-emerald-500/20 transition-colors p-2 rounded-full Active: opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-white font-lexend font-black text-xl tracking-tight">RightsQuest</h1>
+</div>
+<div class="flex items-center">
+<button class="hover:bg-emerald-500/20 transition-colors p-2 rounded-full Active: opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-container-margin py-lg max-w-2xl">
+<!-- Header Section -->
+<div class="mb-lg">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-2 h-6 bg-primary rounded-full"></div>
+<span class="font-label-caps text-primary uppercase tracking-widest">The Outcome · முடிவு</span>
+</div>
+</div>
+<!-- Outcome Card -->
+<section class="bg-white rounded-[14px] border border-primary/10 shadow-sm p-lg flex flex-col gap-md relative overflow-hidden">
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/10 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+<!-- Warning Icon & Title -->
+<div class="flex items-start gap-md">
+<div class="bg-yellow-100 p-3 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-yellow-600 text-3xl" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-h2 text-on-surface text-h2 mb-1">Missed Opportunity</h2>
+<h3 class="font-tamil-body text-primary text-xl font-bold">தவறவிட்ட வாய்ப்பு</h3>
+</div>
+</div>
+<hr class="border-outline-variant/30 my-2"/>
+<!-- English Body Content -->
+<div class="space-y-base">
+<p class="font-body-lg text-on-surface leading-relaxed">
+                    You walked away. You protected your own money, which is good. But the landlord will just illegally demand 6 months' deposit from the next innocent family.
+                </p>
+</div>
+<!-- Tamil Body Content -->
+<div class="bg-surface-container-low p-md rounded-lg border-l-4 border-primary">
+<p class="font-tamil-body text-on-surface-variant">
+                    நீங்கள் விலகிச் சென்றீர்கள். உங்கள் பணத்தைப் பாதுகாத்துக் கொண்டீர்கள், அது நல்லது. ஆனால் வீட்டு உரிமையாளர் அடுத்த அப்பாவி குடும்பத்திடமிருந்து சட்டவிரோதமாக 6 மாத வைப்புத்தொகையைக் கோருவார்.
+                </p>
+</div>
+<!-- Suggestion Text -->
+<div class="mt-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="lightbulb">lightbulb</span>
+<p class="font-label-caps text-secondary font-bold">You have the power to stop this.</p>
+</div>
+<!-- Action Area -->
+<div class="mt-lg pt-md flex flex-col gap-sm">
+<button class="w-full py-3 px-6 rounded-[10px] border-[1.5px] border-primary text-primary font-label-caps hover:bg-primary/5 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="refresh">refresh</span>
+                    Try another route
+                </button>
+</div>
+</section>
+<!-- Illustration Component -->
+<div class="mt-xl rounded-[14px] overflow-hidden border border-outline-variant/20 h-48 relative">
+<img class="w-full h-full object-cover grayscale opacity-80" data-alt="A cinematic, low-angle shot of a residential apartment building entrance at twilight. The lighting is soft and moody, casting long shadows that emphasize a sense of missed community connection. The architectural style is modern yet institutional, using a palette of deep forest greens and warm off-whites. The overall atmosphere is quiet, contemplative, and slightly melancholic, reflecting the weight of legal challenges faced by families." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA328_4r4tInbCvPQ1E5zzcGKHGAdh1g8YLoVgXDRc1LEdqDhWkOX4oPwbSrcqxJCcxZ28zmgw4-QEzkSkvfg04S5JtRdvzxHRatgovs_5E1Hm0BHfCV0dyg3spTD3YYpPDndg22xeGYQFvhVS2uHaCfyF7ceowHEuZ22_kIihAdnNiaVd_t8TI9w8p_VfqWiG9cjE-qXu6KUW66oWqPIBCN7-h3m-SWccl_kJYzmexfrnOctkv5TVQAAvxxYFjEGb__56h_ULI8OXa"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe bg-white dark:bg-slate-950 border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] z-50 rounded-t-2xl h-18">
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 Active: scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors Active: scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Learn</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors Active: scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Legal Aid</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors Active: scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+<!-- Spacer for Bottom Nav -->
+<div class="h-20"></div>
+</body></html>

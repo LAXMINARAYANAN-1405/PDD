@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RightsQuest Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#3d4943",
+                        "surface-variant": "#dee4de",
+                        "on-secondary-container": "#2e6f5d",
+                        "tertiary-fixed-dim": "#94d3bf",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#dee4de",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#86f8c9",
+                        "on-tertiary-container": "#f4fff9",
+                        "primary-container": "#008560",
+                        "secondary-container": "#adf0da",
+                        "on-primary-container": "#f5fff7",
+                        "surface": "#f5fbf5",
+                        "surface-container-low": "#eff5ef",
+                        "on-surface": "#171d1a",
+                        "inverse-primary": "#68dbae",
+                        "secondary-fixed-dim": "#92d4be",
+                        "background": "#f5fbf5",
+                        "surface-dim": "#d6dbd6",
+                        "surface-bright": "#f5fbf5",
+                        "inverse-surface": "#2c322e",
+                        "primary": "#00694c",
+                        "outline": "#6d7a73",
+                        "on-background": "#171d1a",
+                        "tertiary-fixed": "#b0efdb",
+                        "on-tertiary-fixed-variant": "#095041",
+                        "surface-container": "#eaefea",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#276656",
+                        "secondary": "#276958",
+                        "on-primary-fixed-variant": "#00513a",
+                        "surface-tint": "#006c4e",
+                        "surface-container-high": "#e4eae4",
+                        "on-secondary-fixed-variant": "#025140",
+                        "primary-fixed-dim": "#68dbae",
+                        "on-secondary-fixed": "#002018",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#002115",
+                        "tertiary-container": "#427f6e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#002019",
+                        "inverse-on-surface": "#ecf2ed",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#adf0da",
+                        "outline-variant": "#bccac1",
+                        "brand-green": "#1D9E75",
+                        "brand-light-green": "#9FE1CB",
+                        "brand-off-white": "#F8F7F3",
+                        "brand-dark-green": "#085041"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "xl": "32px",
+                        "container-margin": "20px",
+                        "xs": "8px",
+                        "gutter": "12px",
+                        "sm": "12px",
+                        "lg": "24px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "h1": ["Poppins"],
+                        "body-lg": ["Public Sans"],
+                        "label-caps": ["Public Sans"],
+                        "h3": ["Poppins"],
+                        "body-md": ["Public Sans"],
+                        "tamil-body": ["Noto Sans Tamil"],
+                        "h2": ["Poppins"]
+                    },
+                    "fontSize": {
+                        "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                        "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #F8F7F3;
+        }
+        .custom-card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex justify-center items-start min-h-screen">
+<div class="w-full max-w-md bg-[#F8F7F3] min-h-screen relative pb-24">
+<!-- Section 1: Header -->
+<header class="w-full h-[80px] bg-[#1D9E75] flex flex-col justify-center px-4">
+<h1 class="font-h1 text-[18px] font-[800] text-white leading-tight">RightsQuest</h1>
+<p class="font-tamil-body text-[11px] text-[#9FE1CB] leading-tight">உரிமைகள் தெரிந்தால் உண்மை வெல்லும்</p>
+</header>
+<!-- Section 2: Section Label -->
+<div class="mt-lg px-lg">
+<span class="font-h1 text-[10px] font-bold text-[#888780] uppercase tracking-wider">
+                Choose a law · ஒரு சட்டத்தை தேர்ந்தெடுங்கள்
+            </span>
+</div>
+<!-- Section 3: Act Cards -->
+<div class="flex flex-col items-center gap-[10px] mt-sm px-4">
+<!-- Card 1 -->
+<div class="w-[345px] h-[100px] bg-white border-[1.5px] border-[#9FE1CB] rounded-[14px] p-4 flex flex-col justify-between custom-card-shadow">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-h1 text-[12px] font-bold text-[#085041] leading-tight">TN Rent Control Act</h2>
+<h3 class="font-tamil-body text-[11px] font-bold text-[#0F6E56] mt-0.5">தமிழ்நாடு வாடகை கட்டுப்பாடு சட்டம்</h3>
+<p class="font-h1 text-[10px] text-[#444441] mt-1">Protects tenants from unlawful eviction and unfair rent.</p>
+</div>
+<span class="bg-[#E1F5EE] text-[#085041] font-h1 text-[9px] font-bold px-3 py-1 rounded-[20px]">வாடகை</span>
+</div>
+<div class="border-t border-dashed border-[#9FE1CB] pt-2 flex justify-between items-center">
+<span class="font-h1 text-[9px] font-bold text-[#0F6E56]">2 scenarios</span>
+<span class="material-symbols-outlined text-[#1D9E75] text-lg">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="w-[345px] h-[100px] bg-white border-[1.5px] border-[#9FE1CB] rounded-[14px] p-4 flex flex-col justify-between custom-card-shadow">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-h1 text-[12px] font-bold text-[#085041] leading-tight">Minimum Wages Act</h2>
+<h3 class="font-tamil-body text-[11px] font-bold text-[#0F6E56] mt-0.5">குறைந்தபட்ச ஊதியச் சட்டம்</h3>
+<p class="font-h1 text-[10px] text-[#444441] mt-1">Ensures minimum wage standards for workers.</p>
+</div>
+<span class="bg-[#FAEEDA] text-[#633806] font-h1 text-[9px] font-bold px-3 py-1 rounded-[20px]">ஊதியம்</span>
+</div>
+<div class="border-t border-dashed border-[#9FE1CB] pt-2 flex justify-between items-center">
+<span class="font-h1 text-[9px] font-bold text-[#0F6E56]">2 scenarios</span>
+<span class="material-symbols-outlined text-[#1D9E75] text-lg">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="w-[345px] h-[100px] bg-white border-[1.5px] border-[#9FE1CB] rounded-[14px] p-4 flex flex-col justify-between custom-card-shadow">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-h1 text-[12px] font-bold text-[#085041] leading-tight">Consumer Protection Act</h2>
+<h3 class="font-tamil-body text-[11px] font-bold text-[#0F6E56] mt-0.5">நுகர்வோர் பாதுகாப்புச் சட்டம்</h3>
+<p class="font-h1 text-[10px] text-[#444441] mt-1">Protects buyers against unfair trade practices.</p>
+</div>
+<span class="bg-[#FAECE7] text-[#712B13] font-h1 text-[9px] font-bold px-3 py-1 rounded-[20px]">நுகர்வோர்</span>
+</div>
+<div class="border-t border-dashed border-[#9FE1CB] pt-2 flex justify-between items-center">
+<span class="font-h1 text-[9px] font-bold text-[#0F6E56]">2 scenarios</span>
+<span class="material-symbols-outlined text-[#1D9E75] text-lg">arrow_forward</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="w-[345px] h-[100px] bg-white border-[1.5px] border-[#9FE1CB] rounded-[14px] p-4 flex flex-col justify-between custom-card-shadow">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-h1 text-[12px] font-bold text-[#085041] leading-tight">POSH Act</h2>
+<h3 class="font-tamil-body text-[11px] font-bold text-[#0F6E56] mt-0.5">POSH சட்டம்</h3>
+<p class="font-h1 text-[10px] text-[#444441] mt-1">Protects women from harassment at workplaces.</p>
+</div>
+<span class="bg-[#EEEDFE] text-[#3C3489] font-h1 text-[9px] font-bold px-3 py-1 rounded-[20px]">பாதுகாப்பு</span>
+</div>
+<div class="border-t border-dashed border-[#9FE1CB] pt-2 flex justify-between items-center">
+<span class="font-h1 text-[9px] font-bold text-[#0F6E56]">2 scenarios</span>
+<span class="material-symbols-outlined text-[#1D9E75] text-lg">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Section 4: Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md h-[60px] bg-white border-t border-[#E1F5EE] flex justify-around items-center z-50">
+<!-- Home Item (Active) -->
+<button class="flex flex-col items-center gap-1 group">
+<div class="w-4 h-4 rounded-full bg-[#1D9E75]"></div>
+<span class="font-h1 text-[10px] text-[#1D9E75] font-semibold">Home</span>
+</button>
+<!-- Saved Item (Inactive) -->
+<button class="flex flex-col items-center gap-1 group">
+<div class="w-4 h-4 rounded-full bg-[#E1F5EE]"></div>
+<span class="font-h1 text-[10px] text-[#888780]">Saved</span>
+</button>
+<!-- Language Item (Inactive) -->
+<button class="flex flex-col items-center gap-1 group">
+<div class="w-4 h-4 rounded-full bg-[#E1F5EE]"></div>
+<span class="font-tamil-body text-[10px] text-[#888780]">மொழி</span>
+</button>
+</nav>
+<!-- Aesthetic Hero Image Detail (Optional for Visual Context) -->
+<div class="px-4 mt-lg hidden">
+<img class="w-full h-40 object-cover rounded-xl" data-alt="A serene, professional office setting with a focused light source illuminating a legal document and a wooden gavel. The scene is dominated by deep forest green and soft cream tones, reflecting institutional trust and legal authority. The lighting is soft and ambient, creating a calm and accessible atmosphere for reading complex information. High-end modern photography style with a shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ1fK7J_PHxx1GbHMLB6VOc77LqdQZ5rOOaqLpjQOxsX6TyPUNMBUxbDgnEbsEWDCLu0cw0cnNYdaEDKoNymzXflHg4xnI67kl1DXywvtGgk-kgaeWemWVqMhXUdDhBo9_F35VB1gvP-hklwMHAXdaUYupXo5MWMwnLz3Nt-r6ZX0Q1GJAV1uAN088dZHPr_AiDrioBR70SCQrXvwoChFeO9zV8fsi2-q2AWkCxtxk7DkYyxNqYFS61TOLG3X4JgjJfU42zBNmjtTs"/>
+</div>
+</div>
+<!-- Script to simulate TopAppBar and BottomNavBar from JSON if needed in larger scope, 
+         but here we strictly followed the user request sections -->
+</body></html>

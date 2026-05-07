@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RightsQuest - Rent Law Scenarios</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f5fbf5",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#b0efdb",
+                    "on-secondary-container": "#2e6f5d",
+                    "primary-fixed": "#86f8c9",
+                    "secondary-fixed": "#adf0da",
+                    "on-background": "#171d1a",
+                    "secondary": "#276958",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f5fbf5",
+                    "primary-container": "#008560",
+                    "background": "#f5fbf5",
+                    "inverse-on-surface": "#ecf2ed",
+                    "on-surface": "#171d1a",
+                    "primary": "#00694c",
+                    "on-secondary-fixed": "#002018",
+                    "surface-dim": "#d6dbd6",
+                    "on-secondary-fixed-variant": "#025140",
+                    "surface-container-low": "#eff5ef",
+                    "surface-container": "#eaefea",
+                    "on-primary-fixed-variant": "#00513a",
+                    "inverse-primary": "#68dbae",
+                    "outline-variant": "#bccac1",
+                    "inverse-surface": "#2c322e",
+                    "surface-container-high": "#e4eae4",
+                    "surface-variant": "#dee4de",
+                    "tertiary-container": "#427f6e",
+                    "tertiary": "#276656",
+                    "primary-fixed-dim": "#68dbae",
+                    "on-surface-variant": "#3d4943",
+                    "tertiary-fixed-dim": "#94d3bf",
+                    "outline": "#6d7a73",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#006c4e",
+                    "secondary-fixed-dim": "#92d4be",
+                    "on-primary-fixed": "#002115",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#dee4de",
+                    "on-tertiary-fixed-variant": "#095041",
+                    "on-tertiary-container": "#f4fff9",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#002019",
+                    "on-primary-container": "#f5fff7",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#adf0da"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "24px",
+                    "gutter": "12px",
+                    "base": "4px",
+                    "xs": "8px",
+                    "xl": "32px",
+                    "sm": "12px",
+                    "md": "16px",
+                    "container-margin": "20px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Public Sans"],
+                    "label-caps": ["Public Sans"],
+                    "h3": ["Poppins"],
+                    "h1": ["Poppins"],
+                    "h2": ["Poppins"],
+                    "tamil-body": ["Noto Sans Tamil"],
+                    "body-md": ["Public Sans"],
+                    "lexend": ["Lexend"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #f5fbf5; color: #171d1a; -webkit-font-smoothing: antialiased; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #bccac1; border-radius: 10px; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 font-lexend font-bold tracking-tight text-lg docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16 sticky">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined cursor-pointer hover:bg-emerald-500/20 transition-colors p-2 rounded-full">menu</span>
+<span class="text-white font-lexend font-black text-xl">RightsQuest</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined cursor-pointer hover:bg-emerald-500/20 transition-colors p-2 rounded-full">account_circle</span>
+</div>
+</header>
+<main class="flex-1 flex flex-col px-container-margin pt-lg pb-32 max-w-2xl mx-auto w-full">
+<!-- Header Section -->
+<div class="mb-lg">
+<h1 class="font-h2 text-h2 text-primary mb-xs">TN Tenancy Act, 2017</h1>
+<h2 class="font-tamil-body text-tamil-body text-on-surface-variant font-bold mb-md">தமிழ்நாடு வாடகை சட்டம், 2017</h2>
+<div class="bg-primary/5 rounded-xl p-md border border-primary/10">
+<p class="text-label-caps font-label-caps text-secondary uppercase mb-1">Instruction</p>
+<p class="font-body-lg text-body-lg text-on-surface">Choose your situation</p>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant">உங்கள் சூழ்நிலையைத் தேர்ந்தெடுக்கவும்</p>
+</div>
+</div>
+<!-- Scenario Grid -->
+<div class="grid grid-cols-1 gap-md overflow-y-auto custom-scrollbar">
+<!-- Scenario 1 -->
+<div class="bg-white border border-on-secondary-container/10 rounded-[14px] p-md shadow-sm hover:shadow-md transition-all active:scale-[0.98] cursor-pointer flex items-center gap-md">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">payments</span>
+</div>
+<div class="flex-1">
+<h3 class="font-h3 text-[16px] text-primary leading-tight">Excess advance deposit</h3>
+<p class="font-tamil-body text-[14px] text-on-surface-variant leading-tight">அதிக முன்பணம் கேட்பது</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<!-- Scenario 2 -->
+<div class="bg-white border border-on-secondary-container/10 rounded-[14px] p-md shadow-sm hover:shadow-md transition-all active:scale-[0.98] cursor-pointer flex items-center gap-md">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">draw</span>
+</div>
+<div class="flex-1">
+<h3 class="font-h3 text-[16px] text-primary leading-tight">Unregistered agreement</h3>
+<p class="font-tamil-body text-[14px] text-on-surface-variant leading-tight">பதிவு செய்யப்படாத ஒப்பந்தம்</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<!-- Scenario 3 -->
+<div class="bg-white border border-on-secondary-container/10 rounded-[14px] p-md shadow-sm hover:shadow-md transition-all active:scale-[0.98] cursor-pointer flex items-center gap-md">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">assignment_return</span>
+</div>
+<div class="flex-1">
+<h3 class="font-h3 text-[16px] text-primary leading-tight">Deposit not returned</h3>
+<p class="font-tamil-body text-[14px] text-on-surface-variant leading-tight">முன்பணம் திரும்பப் பெற முடியாமை</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<!-- Scenario 4 -->
+<div class="bg-white border border-on-secondary-container/10 rounded-[14px] p-md shadow-sm hover:shadow-md transition-all active:scale-[0.98] cursor-pointer flex items-center gap-md">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">receipt_long</span>
+</div>
+<div class="flex-1">
+<h3 class="font-h3 text-[16px] text-primary leading-tight">Rent receipt denied</h3>
+<p class="font-tamil-body text-[14px] text-on-surface-variant leading-tight">வாடகை ரசீது மறுப்பு</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<!-- Scenario 5 -->
+<div class="bg-white border border-on-secondary-container/10 rounded-[14px] p-md shadow-sm hover:shadow-md transition-all active:scale-[0.98] cursor-pointer flex items-center gap-md">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">trending_up</span>
+</div>
+<div class="flex-1">
+<h3 class="font-h3 text-[16px] text-primary leading-tight">Sudden rent increase</h3>
+<p class="font-tamil-body text-[14px] text-on-surface-variant leading-tight">திடீர் வாடகை உயர்வு</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<!-- Scenario 6 -->
+<div class="bg-white border border-on-secondary-container/10 rounded-[14px] p-md shadow-sm hover:shadow-md transition-all active:scale-[0.98] cursor-pointer flex items-center gap-md">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">campaign</span>
+</div>
+<div class="flex-1">
+<h3 class="font-h3 text-[16px] text-primary leading-tight">Eviction without notice</h3>
+<p class="font-tamil-body text-[14px] text-on-surface-variant leading-tight">முன்னறிவிப்பு இன்றி வெளியேற்றம்</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<!-- Scenario 7 -->
+<div class="bg-white border border-on-secondary-container/10 rounded-[14px] p-md shadow-sm hover:shadow-md transition-all active:scale-[0.98] cursor-pointer flex items-center gap-md">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">door_open</span>
+</div>
+<div class="flex-1">
+<h3 class="font-h3 text-[16px] text-primary leading-tight">Forced/Illegal eviction</h3>
+<p class="font-tamil-body text-[14px] text-on-surface-variant leading-tight">சட்டவிரோத வெளியேற்றம்</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<!-- Scenario 8 -->
+<div class="bg-white border border-on-secondary-container/10 rounded-[14px] p-md shadow-sm hover:shadow-md transition-all active:scale-[0.98] cursor-pointer flex items-center gap-md">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">bolt</span>
+</div>
+<div class="flex-1">
+<h3 class="font-h3 text-[16px] text-primary leading-tight">Landlord harassment</h3>
+<p class="font-tamil-body text-[14px] text-on-surface-variant leading-tight">மின்சாரம்/தண்ணீர் துண்டிப்பு</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+</div>
+<!-- Descriptive Illustration at bottom -->
+<div class="mt-xl">
+<img class="w-full h-48 object-cover rounded-2xl grayscale contrast-125 opacity-40 mix-blend-multiply" data-alt="A detailed, high-contrast photograph of architectural details of residential buildings in Chennai. The lighting is early morning sun, casting long, dramatic shadows against clean concrete surfaces and traditional window frames. The overall aesthetic is one of institutional trust and calm urban stability, dominated by a palette of soft whites and deep forest greens. The composition focuses on the geometric patterns of the dwellings, representing the structure of tenancy law." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-CpNV6lVEpTEhw2rLzTJp7arLZ2u0vhv2rW54bf09TAsAUqbM38smnkK8y_41bq4qy3oDw737WulVwDfnfy3E83XHverXly98el1e75v7AVQM3cLQun-XFVwRudU8kAZu1pSvg8Tuk1A5Sqo3SnpDGIKbaE3Ky2EA362u3QH2tK97WeOX3g5j5bYW_udolkM_S4Ivl973oMV8cBdyzZticHfgcYN3EvUwEIoxRwF4yvlx87hPIceOc6kBkPalbPIny-ko8xywtYu9"/>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe bg-white dark:bg-slate-950 border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] rounded-t-2xl z-50">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors cursor-pointer group">
+<span class="material-symbols-outlined">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Home</span>
+</div>
+<!-- Learn/Learn is active contextually for Scenarios Menu -->
+<div class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-lexend font-bold text-[10px] uppercase tracking-wider mt-1">Learn</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors cursor-pointer">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Saved</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors cursor-pointer">
+<span class="material-symbols-outlined">language</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Language</span>
+</div>
+</nav>
+</body></html>

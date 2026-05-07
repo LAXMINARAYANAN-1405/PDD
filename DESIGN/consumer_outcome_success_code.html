@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#f4fff9",
+                    "on-secondary-fixed": "#002018",
+                    "primary-fixed": "#86f8c9",
+                    "tertiary-fixed": "#b0efdb",
+                    "on-background": "#171d1a",
+                    "surface-container": "#eaefea",
+                    "secondary": "#276958",
+                    "on-secondary-fixed-variant": "#025140",
+                    "tertiary-container": "#427f6e",
+                    "tertiary-fixed-dim": "#94d3bf",
+                    "surface-bright": "#f5fbf5",
+                    "inverse-on-surface": "#ecf2ed",
+                    "surface-variant": "#dee4de",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#dee4de",
+                    "secondary-fixed-dim": "#92d4be",
+                    "on-primary-container": "#f5fff7",
+                    "background": "#f5fbf5",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#adf0da",
+                    "surface-container-low": "#eff5ef",
+                    "on-primary-fixed": "#002115",
+                    "primary-fixed-dim": "#68dbae",
+                    "surface-dim": "#d6dbd6",
+                    "secondary-container": "#adf0da",
+                    "on-primary-fixed-variant": "#00513a",
+                    "inverse-primary": "#68dbae",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#276656",
+                    "primary": "#00694c",
+                    "primary-container": "#008560",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e4eae4",
+                    "inverse-surface": "#2c322e",
+                    "on-secondary-container": "#2e6f5d",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f5fbf5",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#3d4943",
+                    "on-surface": "#171d1a",
+                    "surface-tint": "#006c4e",
+                    "outline": "#6d7a73",
+                    "outline-variant": "#bccac1",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#095041",
+                    "on-tertiary-fixed": "#002019"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "12px",
+                    "xs": "8px",
+                    "base": "4px",
+                    "lg": "24px",
+                    "gutter": "12px",
+                    "md": "16px",
+                    "xl": "32px",
+                    "container-margin": "20px"
+            },
+            "fontFamily": {
+                    "h3": ["Poppins"],
+                    "h1": ["Poppins"],
+                    "h2": ["Poppins"],
+                    "tamil-body": ["Noto Sans Tamil"],
+                    "label-caps": ["Public Sans"],
+                    "body-md": ["Public Sans"],
+                    "body-lg": ["Public Sans"],
+                    "lexend": ["Lexend"]
+            },
+            "fontSize": {
+                    "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #f5fbf5; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Header -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white font-lexend font-bold tracking-tight text-lg docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white" data-icon="menu">menu</span>
+<span class="text-white font-lexend font-black text-xl">RightsQuest</span>
+</div>
+<div class="flex items-center">
+<span class="text-white font-bold opacity-100">The Outcome · முடிவு</span>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-white" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col items-center px-container-margin py-lg space-y-lg mb-24">
+<!-- Success Animation/Icon Area -->
+<section class="flex flex-col items-center justify-center pt-md w-full max-w-md">
+<div class="w-32 h-32 rounded-full bg-primary flex items-center justify-center shadow-[0_8px_24px_rgba(0,105,76,0.25)]">
+<span class="material-symbols-outlined text-white text-[64px]" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+<div class="mt-lg text-center">
+<h1 class="font-h1 text-h1 text-primary">Success!</h1>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-xs">Justice Delivered</p>
+</div>
+</section>
+<!-- Outcome Card (Asymmetric / Modern Corporate) -->
+<article class="bg-surface-container-lowest border border-on-background/10 rounded-[14px] w-full max-w-lg p-lg relative overflow-hidden shadow-sm">
+<!-- Decorative Accent -->
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -mr-8 -mt-8"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-base mb-md">
+<span class="material-symbols-outlined text-primary" data-icon="gavel">gavel</span>
+<h2 class="font-h2 text-h2 text-primary">Lawful Action · சரியான நடவடிக்கை</h2>
+</div>
+<div class="space-y-md">
+<!-- English Section -->
+<div class="p-md bg-background rounded-lg border-l-4 border-primary">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                            You registered a complaint on the <span class="font-bold text-primary">National Consumer Helpline (NCH)</span> app with your bill. The authority issued a notice, and the company was forced to provide a replacement!
+                        </p>
+</div>
+<!-- Tamil Section -->
+<div class="p-md bg-surface-container-low rounded-lg border-l-4 border-secondary">
+<p class="font-tamil-body text-tamil-body text-on-surface-variant leading-relaxed">
+                            உங்கள் ரசீதுடன் தேசிய நுகர்வோர் உதவி மைய (NCH) செயலியில் புகார் அளித்தீர்கள். அதிகாரி நோட்டீஸ் அனுப்பியதால், நிறுவனம் புதிய பொருளை வழங்க வேண்டிய கட்டாயத்திற்கு உள்ளானது!
+                        </p>
+</div>
+</div>
+</div>
+</article>
+<!-- Illustration / Visual Anchor -->
+<div class="w-full max-w-lg overflow-hidden rounded-[14px] border border-on-background/10 aspect-video relative group">
+<img alt="Consumer Protection Illustration" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A professional and corporate digital illustration depicting a clean, modern legal office setting with soft green accents. A scale of justice and a digital tablet showing a successful transaction checkmark are displayed on a white desk. The lighting is high-key and optimistic, symbolizing institutional trust and accessibility. The color palette features deep forest greens and warm off-whites to maintain a calm and authoritative atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0-1nUuuucjoUZaeSRX8Ree7Fh__CML1ABbl9dAstxSXaZ7xefMIOvIn8yehVkgbyiDUZ6Kn3GuN31gN8oQlwImAWKdazYI0Hk-gAQSDVnC45fY635G0rx2hjGlIVoGH_5irOusNWoih0WVXABCil2axOGb4lw5ANERVDAr1prIWmARzOIqBmiFsQuwFt92xMLpj2Y7lUGsou-soqzC8wcgpIp0aKS3CBoOW-5iDgBY7IS_qzVfZEitHlT5nLksBiblN8i1e0D20iy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+<!-- Action Button -->
+<div class="w-full max-w-md px-md pt-md">
+<button class="w-full py-md bg-primary text-white font-h3 text-h3 rounded-[10px] shadow-[0_4px_12px_rgba(0,105,76,0.15)] flex items-center justify-center gap-sm active:scale-[0.98] transition-all">
+                See the Law · சட்டத்தைப் பார்க்க
+                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe bg-white dark:bg-slate-950 border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] rounded-t-2xl z-50">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Home</span>
+</a>
+<!-- Saved (Success falls under a 'Saved' or 'Success' flow, but here we show it as inactive for navigation) -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Saved</span>
+</a>
+<!-- Learn (Primary Intent for Education Outcome) -->
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Learn</span>
+</a>
+<!-- Language -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="translate">translate</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Language</span>
+</a>
+</nav>
+</body></html>

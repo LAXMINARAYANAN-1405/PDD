@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#095041",
+                        "on-primary-fixed-variant": "#00513a",
+                        "tertiary-fixed": "#b0efdb",
+                        "outline-variant": "#bccac1",
+                        "inverse-on-surface": "#ecf2ed",
+                        "secondary-fixed": "#adf0da",
+                        "on-surface-variant": "#3d4943",
+                        "on-tertiary-fixed": "#002019",
+                        "on-primary-container": "#f5fff7",
+                        "on-tertiary-container": "#f4fff9",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#d6dbd6",
+                        "primary-container": "#008560",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2c322e",
+                        "primary-fixed-dim": "#68dbae",
+                        "on-secondary-fixed-variant": "#025140",
+                        "on-secondary-container": "#2e6f5d",
+                        "surface-container": "#eaefea",
+                        "primary-fixed": "#86f8c9",
+                        "outline": "#6d7a73",
+                        "secondary": "#276958",
+                        "tertiary": "#276656",
+                        "on-primary-fixed": "#002115",
+                        "tertiary-fixed-dim": "#94d3bf",
+                        "background": "#f5fbf5",
+                        "surface-bright": "#f5fbf5",
+                        "surface-container-highest": "#dee4de",
+                        "surface-variant": "#dee4de",
+                        "surface": "#f5fbf5",
+                        "tertiary-container": "#427f6e",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#002018",
+                        "on-background": "#171d1a",
+                        "surface-tint": "#006c4e",
+                        "on-surface": "#171d1a",
+                        "primary": "#00694c",
+                        "inverse-primary": "#68dbae",
+                        "surface-container-high": "#e4eae4",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#adf0da",
+                        "surface-container-low": "#eff5ef",
+                        "secondary-fixed-dim": "#92d4be",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "10px",
+                        "xl": "14px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "container-margin": "20px",
+                        "base": "4px",
+                        "xl": "32px",
+                        "sm": "12px",
+                        "lg": "24px",
+                        "xs": "8px",
+                        "gutter": "12px"
+                    },
+                    "fontFamily": {
+                        "h3": ["Poppins"],
+                        "tamil-body": ["Noto Sans Tamil"],
+                        "label-caps": ["Public Sans"],
+                        "h1": ["Poppins"],
+                        "h2": ["Poppins"],
+                        "body-md": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "lexend": ["Lexend"]
+                    },
+                    "fontSize": {
+                        "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                        "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #F8F7F3;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 font-lexend font-bold tracking-tight text-lg docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16 sticky top-0">
+<button class="hover:bg-emerald-500/20 transition-colors p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<div class="text-white font-lexend font-black text-xl">RightsQuest</div>
+<button class="hover:bg-emerald-500/20 transition-colors p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</header>
+<main class="flex-1 px-container-margin py-lg pb-32">
+<!-- Header Section -->
+<section class="mb-lg">
+<h1 class="font-h2 text-h2 text-primary mb-xs">Consumer Protection Act</h1>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant font-bold">நுகர்வோர் பாதுகாப்புச் சட்டம்</p>
+<div class="mt-md italic text-outline font-body-md">
+                Choose your situation · உங்கள் சூழ்நிலையைத் தேர்ந்தெடுக்கவும்
+            </div>
+</section>
+<!-- Scenario Grid (Custom Bento-inspired Column) -->
+<div class="grid grid-cols-1 gap-md">
+<!-- Card 1 -->
+<div class="bg-white border border-on-surface/10 rounded-xl p-md flex items-center gap-md shadow-sm transition-transform active:scale-95">
+<div class="bg-secondary-container text-on-secondary-container w-12 h-12 rounded-lg flex items-center justify-center text-2xl shadow-sm">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+</div>
+<div>
+<h3 class="font-h3 text-body-lg font-bold text-on-surface">Defective product</h3>
+<p class="font-tamil-body text-on-surface-variant">பழுதடைந்த பொருள்</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 2 -->
+<div class="bg-white border border-on-surface/10 rounded-xl p-md flex items-center gap-md shadow-sm transition-transform active:scale-95">
+<div class="bg-secondary-container text-on-secondary-container w-12 h-12 rounded-lg flex items-center justify-center text-2xl shadow-sm">
+<span class="material-symbols-outlined" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div>
+<h3 class="font-h3 text-body-lg font-bold text-on-surface">Warranty claim denied</h3>
+<p class="font-tamil-body text-on-surface-variant">உத்தரவாதக் கோரிக்கை மறுப்பு</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 3 -->
+<div class="bg-white border border-on-surface/10 rounded-xl p-md flex items-center gap-md shadow-sm transition-transform active:scale-95">
+<div class="bg-secondary-container text-on-secondary-container w-12 h-12 rounded-lg flex items-center justify-center text-2xl shadow-sm">
+<span class="material-symbols-outlined" data-icon="home_repair_service">home_repair_service</span>
+</div>
+<div>
+<h3 class="font-h3 text-body-lg font-bold text-on-surface">Service not delivered</h3>
+<p class="font-tamil-body text-on-surface-variant">உறுதியளிக்கப்பட்ட சேவை வழங்கப்படாமை</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 4 -->
+<div class="bg-white border border-on-surface/10 rounded-xl p-md flex items-center gap-md shadow-sm transition-transform active:scale-95">
+<div class="bg-secondary-container text-on-secondary-container w-12 h-12 rounded-lg flex items-center justify-center text-2xl shadow-sm">
+<span class="material-symbols-outlined" data-icon="sell">sell</span>
+</div>
+<div>
+<h3 class="font-h3 text-body-lg font-bold text-on-surface">Overcharging above MRP</h3>
+<p class="font-tamil-body text-on-surface-variant">MRP-ஐ விட அதிக கட்டணம்</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 5 -->
+<div class="bg-white border border-on-surface/10 rounded-xl p-md flex items-center gap-md shadow-sm transition-transform active:scale-95">
+<div class="bg-secondary-container text-on-secondary-container w-12 h-12 rounded-lg flex items-center justify-center text-2xl shadow-sm">
+<span class="material-symbols-outlined" data-icon="campaign" style="font-variation-settings: 'FILL' 1;">campaign</span>
+</div>
+<div>
+<h3 class="font-h3 text-body-lg font-bold text-on-surface">False advertisement</h3>
+<p class="font-tamil-body text-on-surface-variant">தவறான விளம்பரம்</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 6 -->
+<div class="bg-white border border-on-surface/10 rounded-xl p-md flex items-center gap-md shadow-sm transition-transform active:scale-95">
+<div class="bg-secondary-container text-on-secondary-container w-12 h-12 rounded-lg flex items-center justify-center text-2xl shadow-sm">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+</div>
+<div>
+<h3 class="font-h3 text-body-lg font-bold text-on-surface">Refusal to give bill</h3>
+<p class="font-tamil-body text-on-surface-variant">ரசீது வழங்க மறுப்பு</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 7 -->
+<div class="bg-white border border-on-surface/10 rounded-xl p-md flex items-center gap-md shadow-sm transition-transform active:scale-95">
+<div class="bg-secondary-container text-on-secondary-container w-12 h-12 rounded-lg flex items-center justify-center text-2xl shadow-sm">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+</div>
+<div>
+<h3 class="font-h3 text-body-lg font-bold text-on-surface">Online delivery issue</h3>
+<p class="font-tamil-body text-on-surface-variant">ஆன்லைன் டெலிவரி பிரச்சனை</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 8 -->
+<div class="bg-white border border-on-surface/10 rounded-xl p-md flex items-center gap-md shadow-sm transition-transform active:scale-95">
+<div class="bg-secondary-container text-on-secondary-container w-12 h-12 rounded-lg flex items-center justify-center text-2xl shadow-sm">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+</div>
+<div>
+<h3 class="font-h3 text-body-lg font-bold text-on-surface">Medical negligence</h3>
+<p class="font-tamil-body text-on-surface-variant">மருத்துவ அலட்சியம்</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 9 -->
+<div class="bg-white border border-on-surface/10 rounded-xl p-md flex items-center gap-md shadow-sm transition-transform active:scale-95">
+<div class="bg-secondary-container text-on-secondary-container w-12 h-12 rounded-lg flex items-center justify-center text-2xl shadow-sm">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</div>
+<div>
+<h3 class="font-h3 text-body-lg font-bold text-on-surface">Unfair trade practice</h3>
+<p class="font-tamil-body text-on-surface-variant">முறைகேடான வணிக நடைமுறை</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Featured Resource Image (Thematic Cohesion) -->
+<div class="mt-xl rounded-xl overflow-hidden relative h-40 shadow-sm border border-on-surface/5">
+<img class="w-full h-full object-cover" data-alt="A professional and modern digital illustration representing legal justice and consumer rights. The scene features a stylized set of scales of justice set against a background of soft emerald greens and warm off-white tones. The lighting is bright and corporate, conveying a sense of transparency and institutional trust. Minimalist geometric elements create a sophisticated, clean aesthetic that aligns with a high-end legal education mobile application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVG6f-6qcMO5wpSSV_TGunPkm_YXYMDWmvaLFpcV8X5ND1XOChy1rdvZq8IlvVaIrXEhKRLVUYXg0emtHYn1E1qDmyFEt24CSMfLDVwvBSOwqklfbRb2qG6qrYVkIS8-ctniKNdRqkLwDMe2Fe562BOuHDHBEv8msAPirXOARimEZRz34oFhteday0Ox5jfdo-alqFPlaeM3MSgloivINrJBer9DE15e6yIObA9awaHBK06ftDqiVwt0YGB4qOJEqmASedcL3qAQeU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-md">
+<span class="text-white font-label-caps uppercase text-label-caps">Know Your Rights · உங்கள் உரிமைகளை அறிந்து கொள்ளுங்கள்</span>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe bg-white dark:bg-slate-950 border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] z-50 rounded-t-2xl">
+<!-- Home (Inactive) -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors Active: scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Home</span>
+</a>
+<!-- Saved (Inactive) -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors Active: scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Saved</span>
+</a>
+<!-- Learn (Active - Closest Match for Situations Selection) -->
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 Active: scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Learn</span>
+</a>
+<!-- Profile (Inactive) -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors Active: scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="translate">translate</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Language</span>
+</a>
+</nav>
+</body></html>

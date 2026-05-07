@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Situation Summary - RightsQuest</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#eff5ef",
+                      "surface-bright": "#f5fbf5",
+                      "on-surface": "#171d1a",
+                      "secondary": "#276958",
+                      "error": "#ba1a1a",
+                      "background": "#f5fbf5",
+                      "on-tertiary-fixed-variant": "#095041",
+                      "surface-container-highest": "#dee4de",
+                      "outline-variant": "#bccac1",
+                      "on-primary-fixed": "#002115",
+                      "secondary-fixed": "#adf0da",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#427f6e",
+                      "surface-container": "#eaefea",
+                      "surface": "#f5fbf5",
+                      "on-tertiary-container": "#f4fff9",
+                      "on-background": "#171d1a",
+                      "outline": "#6d7a73",
+                      "on-secondary-fixed": "#002018",
+                      "inverse-on-surface": "#ecf2ed",
+                      "on-tertiary-fixed": "#002019",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#94d3bf",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-fixed": "#86f8c9",
+                      "surface-variant": "#dee4de",
+                      "primary": "#00694c",
+                      "error-container": "#ffdad6",
+                      "on-surface-variant": "#3d4943",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#f5fff7",
+                      "tertiary": "#276656",
+                      "surface-container-high": "#e4eae4",
+                      "on-primary-fixed-variant": "#00513a",
+                      "tertiary-fixed": "#b0efdb",
+                      "on-secondary-container": "#2e6f5d",
+                      "secondary-fixed-dim": "#92d4be",
+                      "inverse-surface": "#2c322e",
+                      "secondary-container": "#adf0da",
+                      "on-secondary-fixed-variant": "#025140",
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#68dbae",
+                      "primary-container": "#008560",
+                      "surface-dim": "#d6dbd6",
+                      "on-error": "#ffffff",
+                      "surface-tint": "#006c4e",
+                      "primary-fixed-dim": "#68dbae"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "8px",
+                      "xl": "12px",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xl": "32px",
+                      "xs": "8px",
+                      "sm": "12px",
+                      "base": "4px",
+                      "lg": "24px",
+                      "gutter": "12px",
+                      "md": "16px",
+                      "container-margin": "20px"
+              },
+              "fontFamily": {
+                      "lexend": ["Lexend", "sans-serif"],
+                      "tamil-body": ["Noto Sans Tamil", "sans-serif"],
+                      "label-caps": ["Public Sans", "sans-serif"],
+                      "h1": ["Poppins", "sans-serif"],
+                      "body-lg": ["Public Sans", "sans-serif"],
+                      "h3": ["Poppins", "sans-serif"],
+                      "h2": ["Poppins", "sans-serif"],
+                      "body-md": ["Public Sans", "sans-serif"]
+              },
+              "fontSize": {
+                      "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                      "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f5fbf5;
+            font-family: 'Lexend', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16 sticky">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined cursor-pointer hover:bg-emerald-500/20 transition-colors p-1 rounded-full">menu</span>
+<h1 class="font-lexend font-bold tracking-tight text-lg text-white">Your Situation Summary · உங்கள் நிலை</h1>
+</div>
+<span class="material-symbols-outlined cursor-pointer hover:bg-emerald-500/20 transition-colors p-1 rounded-full">account_circle</span>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow p-container-margin pb-32">
+<div class="max-w-md mx-auto">
+<!-- Summary Illustration -->
+<div class="w-full h-48 rounded-xl overflow-hidden mb-lg shadow-sm border border-outline-variant/10">
+<img class="w-full h-full object-cover" data-alt="A professional and clean workspace scene featuring a polished wooden table with legal documents, a pen, and a scale of justice figurine. The lighting is bright and warm, emphasizing a modern corporate and authoritative legal environment. The color palette is dominated by deep greens and soft creams to convey stability, trust, and empathetic accessibility for legal navigation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCH26LLYOg1DFb83y3Z6sE_nqG0VKQ2yVMMPNxwbuTCAMJfzStSC1_rpWeS9uxOchefMH2Qawc4IcXE0P6ajZ-XPyWBCLkKR8-enfknwwSDhp_QpjMu7Iqm4ZMM4rLmSlq5DUaGgJ52LkTRejRqr4HDcj0xX5MR5vSs5gt1fjvalPeJUbCZAOA3RA61c6wPjKho2AY2UEWR04n8u9i6d4Y-PVS8pu6Xdkbt0143cJA95_x7AbiLWAMcxC4i9uW556F-rXbCZWM4v1F"/>
+</div>
+<!-- Main White Card -->
+<div class="bg-white rounded-xl border-2 border-primary/20 shadow-sm overflow-hidden">
+<!-- Section 1: Situation -->
+<section class="p-md border-b border-surface-container">
+<div class="flex items-start gap-3 mb-xs">
+<span class="material-symbols-outlined text-primary mt-1">assignment</span>
+<h2 class="font-lexend font-bold text-primary text-md">Situation</h2>
+</div>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                        You worked for multiple months but did not receive your salary despite repeated delays by your employer.
+                    </p>
+<p class="font-tamil-body text-secondary mt-2 border-l-4 border-secondary/20 pl-3 italic">
+                        உங்கள் முதலாளி பல மாதங்களாக சம்பளத்தை வழங்காமல் இழுத்தடித்து வருகிறார்.
+                    </p>
+</section>
+<!-- Section 2: Meaning -->
+<section class="p-md border-b border-surface-container bg-surface-container-lowest">
+<div class="flex items-start gap-3 mb-xs">
+<span class="material-symbols-outlined text-primary mt-1">info</span>
+<h2 class="font-lexend font-bold text-primary text-md">What this means</h2>
+</div>
+<p class="font-body-md text-on-surface-variant">
+                        This situation may be a concern under wage-related labour laws. Unjustified delays or non-payment of earned wages can be challenged through the appropriate authority.
+                    </p>
+<p class="font-tamil-body text-secondary mt-2 border-l-4 border-secondary/20 pl-3 italic">
+                        இது ஊதியம் தொடர்பான தொழிலாளர் சட்டங்களின் கீழ் ஒரு கவலைக்குரிய விஷயமாகும். தகுந்த அதிகாரி மூலம் இதற்குத் தீர்வு காணலாம்.
+                    </p>
+</section>
+<!-- Section 3: Actions -->
+<section class="p-md border-b border-surface-container">
+<div class="flex items-start gap-3 mb-xs">
+<span class="material-symbols-outlined text-primary mt-1">gavel</span>
+<h2 class="font-lexend font-bold text-primary text-md">What you can do</h2>
+</div>
+<ul class="space-y-4">
+<li class="flex flex-col gap-1">
+<div class="flex items-start gap-2">
+<span class="text-primary mt-0.5">•</span>
+<span class="font-body-md text-on-surface-variant">Send a formal written request asking for your pending salary.</span>
+</div>
+<span class="font-tamil-body text-secondary text-sm ml-4">உங்கள் நிலுவையில் உள்ள சம்பளத்தைக் கேட்டு முறையான கடிதம் அனுப்பவும்.</span>
+</li>
+<li class="flex flex-col gap-1">
+<div class="flex items-start gap-2">
+<span class="text-primary mt-0.5">•</span>
+<span class="font-body-md text-on-surface-variant">Keep proof of your work and communication.</span>
+</div>
+<span class="font-tamil-body text-secondary text-sm ml-4">உங்கள் வேலை மற்றும் தகவல் பரிமாற்றத்திற்கான ஆதாரங்களை வைத்திருக்கவும்.</span>
+</li>
+<li class="flex flex-col gap-1">
+<div class="flex items-start gap-2">
+<span class="text-primary mt-0.5">•</span>
+<span class="font-body-md text-on-surface-variant">Approach the Labour Office for support.</span>
+</div>
+<span class="font-tamil-body text-secondary text-sm ml-4">ஆதரவிற்காக தொழிலாளர் அலுவலகத்தை அணுகவும்.</span>
+</li>
+</ul>
+</section>
+<!-- Section 4: Checklist -->
+<section class="p-md bg-primary-container/5">
+<div class="flex items-start gap-3 mb-xs">
+<span class="material-symbols-outlined text-primary mt-1">folder_open</span>
+<h2 class="font-lexend font-bold text-primary text-md">What to keep</h2>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="flex items-center gap-3 bg-white p-3 rounded-lg border border-primary/10">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Months of unpaid salary</span>
+</div>
+<div class="flex items-center gap-3 bg-white p-3 rounded-lg border border-primary/10">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Total amount due</span>
+</div>
+<div class="flex items-center gap-3 bg-white p-3 rounded-lg border border-primary/10">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Employer details and address</span>
+</div>
+<div class="flex items-center gap-3 bg-white p-3 rounded-lg border border-primary/10">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Work proof / Offer letters</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Warning Footer -->
+<footer class="mt-lg px-xs py-md bg-error-container/20 rounded-lg border border-error/10">
+<p class="text-error font-body-md text-center text-[13px] leading-snug">
+                    This information is for awareness only. Actual legal rules and procedures may vary. Please verify with the appropriate authority.
+                </p>
+</footer>
+<!-- Action Buttons -->
+<div class="flex gap-4 mt-xl">
+<button class="flex-1 bg-primary text-white py-4 rounded-lg font-lexend font-bold flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined">bookmark</span>
+                    Save · சேமி
+                </button>
+<button class="flex-1 bg-secondary-container text-on-secondary-container py-4 rounded-lg font-lexend font-bold flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined">share</span>
+                    Share · பகிர்
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe bg-white dark:bg-slate-950 border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] z-50 rounded-t-2xl">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">translate</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Language</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ta"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#adf0da",
+                    "on-tertiary-container": "#f4fff9",
+                    "on-surface-variant": "#3d4943",
+                    "error": "#ba1a1a",
+                    "surface": "#f5fbf5",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#dee4de",
+                    "primary": "#00694c",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#dee4de",
+                    "surface-container": "#eaefea",
+                    "outline-variant": "#bccac1",
+                    "surface-container-low": "#eff5ef",
+                    "on-primary-container": "#f5fff7",
+                    "on-surface": "#171d1a",
+                    "on-tertiary-fixed-variant": "#095041",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#d6dbd6",
+                    "on-secondary-fixed": "#002018",
+                    "secondary-fixed-dim": "#92d4be",
+                    "on-secondary-container": "#2e6f5d",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#b0efdb",
+                    "tertiary-fixed-dim": "#94d3bf",
+                    "inverse-primary": "#68dbae",
+                    "inverse-on-surface": "#ecf2ed",
+                    "on-background": "#171d1a",
+                    "tertiary": "#276656",
+                    "surface-container-high": "#e4eae4",
+                    "on-error": "#ffffff",
+                    "secondary": "#276958",
+                    "primary-fixed": "#86f8c9",
+                    "surface-tint": "#006c4e",
+                    "primary-container": "#008560",
+                    "on-primary-fixed": "#002115",
+                    "primary-fixed-dim": "#68dbae",
+                    "tertiary-container": "#427f6e",
+                    "background": "#f5fbf5",
+                    "surface-bright": "#f5fbf5",
+                    "inverse-surface": "#2c322e",
+                    "on-tertiary-fixed": "#002019",
+                    "secondary-fixed": "#adf0da",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#025140",
+                    "on-primary-fixed-variant": "#00513a",
+                    "outline": "#6d7a73"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "md": "16px",
+                    "gutter": "12px",
+                    "sm": "12px",
+                    "lg": "24px",
+                    "xl": "32px",
+                    "container-margin": "20px",
+                    "xs": "8px"
+            },
+            "fontFamily": {
+                    "tamil-body": ["Noto Sans Tamil"],
+                    "label-caps": ["Public Sans"],
+                    "h3": ["Poppins"],
+                    "h2": ["Poppins"],
+                    "body-md": ["Public Sans"],
+                    "h1": ["Poppins"],
+                    "body-lg": ["Public Sans"],
+                    "lexend": ["Lexend"]
+            },
+            "fontSize": {
+                    "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { background-color: #f5fbf5; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16 sticky">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-white opacity-80 hover:bg-emerald-500/20 transition-colors p-2 rounded-full" data-icon="menu">menu</button>
+<h1 class="font-lexend font-black text-xl tracking-tight">RightsQuest</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-white hover:bg-emerald-500/20 transition-colors p-2 rounded-full" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<main class="max-w-md mx-auto px-container-margin pt-lg pb-xl">
+<!-- Hero Section -->
+<section class="mb-lg">
+<div class="bg-primary p-lg rounded-xl shadow-lg relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-h2 text-h2 text-white mb-xs">Make your choice</h2>
+<h3 class="font-tamil-body text-tamil-body text-secondary-fixed-dim font-bold">உங்கள் முடிவை எடுங்கள்</h3>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-20 transform rotate-12">
+<span class="material-symbols-outlined text-[120px]" data-icon="gavel">gavel</span>
+</div>
+</div>
+</section>
+<!-- Scenario Context -->
+<div class="mb-lg">
+<div class="flex items-center gap-xs mb-xs">
+<span class="w-1.5 h-6 bg-primary rounded-full"></span>
+<span class="font-label-caps text-label-caps text-outline uppercase">Current Scenario</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Your landlord is asking for 6 months advance without a contract. What do you do?</p>
+</div>
+<!-- Options Bento Grid -->
+<div class="grid grid-cols-1 gap-md">
+<!-- Option 1 -->
+<button class="group text-left bg-white border border-on-surface/10 rounded-xl p-md transition-all active:scale-[0.98] shadow-sm hover:border-primary/30">
+<div class="flex items-start gap-md">
+<div class="bg-surface-container-highest p-sm rounded-lg group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="payments">payments</span>
+</div>
+<div class="flex-1">
+<span class="font-label-caps text-label-caps text-primary block mb-1">OPTION 1</span>
+<p class="font-body-md text-body-md font-bold text-on-surface mb-1">Pay the 6 months' deposit without a written agreement.</p>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant italic">எழுத்துப்பூர்வ ஒப்பந்தம் இன்றி 6 மாத வைப்புத்தொகையை செலுத்துங்கள்.</p>
+</div>
+</div>
+</button>
+<!-- Option 2 -->
+<button class="group text-left bg-white border border-on-surface/10 rounded-xl p-md transition-all active:scale-[0.98] shadow-sm hover:border-primary/30">
+<div class="flex items-start gap-md">
+<div class="bg-surface-container-highest p-sm rounded-lg group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="door_open">door_open</span>
+</div>
+<div class="flex-1">
+<span class="font-label-caps text-label-caps text-primary block mb-1">OPTION 2</span>
+<p class="font-body-md text-body-md font-bold text-on-surface mb-1">Leave the house and search for another one.</p>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant italic">வீட்டை விட்டு வெளியேறி வேறொரு வீட்டைத் தேடுங்கள்.</p>
+</div>
+</div>
+</button>
+<!-- Option 3 (The Recommended One - Strategic Highlight) -->
+<button class="group text-left bg-primary-container/10 border-2 border-primary-container rounded-xl p-md transition-all active:scale-[0.98] shadow-md relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary-container text-white px-3 py-1 rounded-bl-lg font-label-caps text-[10px]">STRATEGIC</div>
+<div class="flex items-start gap-md">
+<div class="bg-primary-container p-sm rounded-lg">
+<span class="material-symbols-outlined text-white" data-icon="description">description</span>
+</div>
+<div class="flex-1">
+<span class="font-label-caps text-label-caps text-primary-container block mb-1">OPTION 3</span>
+<p class="font-body-md text-body-md font-bold text-on-surface mb-1">Demand a registered agreement and pay only 3 months.</p>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant italic">பதிவுசெய்யப்பட்ட ஒப்பந்தத்தைக் கோரி 3 மாதங்கள் மட்டும் செலுத்துங்கள்.</p>
+</div>
+</div>
+</button>
+</div>
+<!-- Instructional Visual -->
+<div class="mt-xl rounded-2xl overflow-hidden shadow-lg aspect-video relative group">
+<img alt="Legal Agreement Concept" class="w-full h-full object-cover" data-alt="A professional top-down photograph of a legal rental agreement being signed with a premium fountain pen. The setting is a clean, bright minimalist desk with warm morning sunlight casting soft shadows. The visual style follows a modern corporate aesthetic with a palette of deep forest greens and off-white paper. The mood is calm, authoritative, and trustworthy, emphasizing legal clarity and protection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJjTKxPhLXxJ6v9Dvt9CWMoh0itj0uwOtc6OR7r-X9UPv2R-kA_VllOxZS7HQhEZNUCWLyyodNl1qLnWYzt5d3R3T3ueITQXI_hXyKXSwYXg0h-Bz3besgvA94lq9EP4rBvUUehAGYpt1iHoGqycLNjLxTGoisW2dNdpfOPkvRe5rNJdkwJDLE3k3pEzxKPJCD9GayM7uI_RNgRFJZi3o6z86BcPgH2r_iHJ5WjrgEZjo9-k5aGaMcdwwLKX4TMCGkpSn4dxI0e03D"/>
+<div class="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-md p-md">
+<div class="flex items-center gap-xs text-white mb-1">
+<span class="material-symbols-outlined text-sm" data-icon="info">info</span>
+<span class="font-label-caps text-[10px]">Legal Fact</span>
+</div>
+<p class="text-white text-xs font-tamil-body leading-relaxed">தமிழ்நாடு அடுக்குமாடி குடியிருப்புச் சட்டத்தின்படி, வைப்புத்தொகை 3 மாத வாடகையைத் தாண்டக்கூடாது.</p>
+<p class="text-white/70 text-[10px] uppercase tracking-widest mt-1">Under TN Regulation of Rights and Responsibilities of Landlords and Tenants Act.</p>
+</div>
+</div>
+</main>
+<!-- Spacer for Bottom Nav -->
+<div class="h-24"></div>
+<!-- BottomNavBar -->
+<nav class="bg-white dark:bg-slate-950 docked full-width bottom-0 z-50 rounded-t-2xl border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="bookmark">bookmark</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="language">language</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Language</span>
+</a>
+</nav>
+</body></html>

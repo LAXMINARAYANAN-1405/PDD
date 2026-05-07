@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#f4fff9",
+                        "on-secondary-fixed": "#002018",
+                        "primary-fixed": "#86f8c9",
+                        "tertiary-fixed": "#b0efdb",
+                        "on-background": "#171d1a",
+                        "surface-container": "#eaefea",
+                        "secondary": "#276958",
+                        "on-secondary-fixed-variant": "#025140",
+                        "tertiary-container": "#427f6e",
+                        "tertiary-fixed-dim": "#94d3bf",
+                        "surface-bright": "#f5fbf5",
+                        "inverse-on-surface": "#ecf2ed",
+                        "surface-variant": "#dee4de",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#dee4de",
+                        "secondary-fixed-dim": "#92d4be",
+                        "on-primary-container": "#f5fff7",
+                        "background": "#f5fbf5",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#adf0da",
+                        "surface-container-low": "#eff5ef",
+                        "on-primary-fixed": "#002115",
+                        "primary-fixed-dim": "#68dbae",
+                        "surface-dim": "#d6dbd6",
+                        "secondary-container": "#adf0da",
+                        "on-primary-fixed-variant": "#00513a",
+                        "inverse-primary": "#68dbae",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#276656",
+                        "primary": "#00694c",
+                        "primary-container": "#008560",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e4eae4",
+                        "inverse-surface": "#2c322e",
+                        "on-secondary-container": "#2e6f5d",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#f5fbf5",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#3d4943",
+                        "on-surface": "#171d1a",
+                        "surface-tint": "#006c4e",
+                        "outline": "#6d7a73",
+                        "outline-variant": "#bccac1",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#095041",
+                        "on-tertiary-fixed": "#002019"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "xs": "8px",
+                        "base": "4px",
+                        "lg": "24px",
+                        "gutter": "12px",
+                        "md": "16px",
+                        "xl": "32px",
+                        "container-margin": "20px"
+                    },
+                    "fontFamily": {
+                        "h3": ["Poppins"],
+                        "h1": ["Poppins"],
+                        "h2": ["Poppins"],
+                        "tamil-body": ["Noto Sans Tamil"],
+                        "label-caps": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "lexend": ["Lexend"]
+                    },
+                    "fontSize": {
+                        "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                        "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined cursor-pointer hover:bg-emerald-500/20 transition-colors p-2 rounded-full">menu</span>
+<h1 class="font-lexend font-black text-xl tracking-tight">RightsQuest</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-white font-bold opacity-100 font-lexend text-sm" href="#">Home</a>
+<a class="text-emerald-100 opacity-80 hover:bg-emerald-500/20 transition-colors font-lexend text-sm px-2 py-1 rounded" href="#">Learn</a>
+<a class="text-emerald-100 opacity-80 hover:bg-emerald-500/20 transition-colors font-lexend text-sm px-2 py-1 rounded" href="#">Legal Aid</a>
+</div>
+<span class="material-symbols-outlined cursor-pointer hover:bg-emerald-500/20 transition-colors p-2 rounded-full">account_circle</span>
+</div>
+</header>
+<main class="flex-grow pb-32">
+<!-- Hero Header -->
+<section class="bg-primary text-on-primary py-lg px-container-margin shadow-md">
+<div class="max-w-2xl mx-auto text-center">
+<h2 class="font-h1 text-h1 mb-2">Know Your Rights</h2>
+<h3 class="font-tamil-body text-h2 opacity-90">உங்கள் உரிமையை அறிந்துகொள்ளுங்கள்</h3>
+</div>
+</section>
+<div class="max-w-xl mx-auto px-container-margin -mt-6">
+<!-- Law Reveal Bento Grid / Card Layout -->
+<div class="space-y-lg">
+<article class="bg-white rounded-[14px] border border-secondary/10 shadow-sm overflow-hidden flex flex-col">
+<div class="bg-primary-container p-lg text-white">
+<div class="flex items-center gap-md mb-xs">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">gavel</span>
+<span class="font-label-caps text-label-caps uppercase text-primary-fixed">Statute Highlight</span>
+</div>
+<h3 class="font-h2 text-h2 mb-md">Consumer Protection Act, 2019</h3>
+<!-- Image Container with prompt -->
+<div class="w-full h-48 rounded-lg overflow-hidden mb-lg relative">
+<img class="w-full h-full object-cover" data-alt="A professional, clean high-angle shot of a judge's gavel resting on a stack of legal documents. The lighting is bright and modern, consistent with a light-mode UI, featuring soft shadows. The color palette emphasizes deep emerald greens and crisp whites, creating an atmosphere of institutional trust and corporate authority. The background is a blurred high-end office setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSviHWJ3mTbobTNQEPKt40kGLUSQUR_w1l9Er6anLdKUM2B6CVTn3lmsy9JCFj6hwSv7MVMzPKa6sdnlLwMpUXKiAiDBakG0orENhgWRLW90FYWC_T7-5L5v9s-r51UJXeJA8TkAdfmlksc3GQv5ztFmv-ksuy1aULBge2cIhWVSd7KYTf4D0YK8fl1bpZVndXRQXicufbx4dwkxMY6XEAqcQNsn7_LvsnwhVcFcfe5fup_aUCVTMfdqK6npGLopdpaOxxmXsZL4Or"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+</div>
+<div class="space-y-lg">
+<div class="space-y-xs">
+<p class="font-body-lg text-body-lg leading-relaxed">
+                                    "Consumers have the right to seek redressal against defective goods or deficient services. Sellers and manufacturers are generally required to repair, replace, or refund defective items within the warranty period."
+                                </p>
+</div>
+<div class="pt-md border-t border-white/20">
+<p class="font-tamil-body text-tamil-body leading-relaxed opacity-95">
+                                    "பழுதடைந்த பொருட்கள் அல்லது குறைபாடான சேவைகளுக்கு எதிராக தீர்வு தேட நுகர்வோருக்கு உரிமை உள்ளது. உத்திரவாதக் காலத்திற்குள் பழுதடைந்த பொருட்களை சரிசெய்யவோ, மாற்றவோ அல்லது பணத்தைத் திரும்பத் தரவோ விற்பனையாளர்கள் மற்றும் உற்பத்தியாளர்கள் கடமைப்பட்டுள்ளனர்."
+                                </p>
+</div>
+</div>
+</div>
+<div class="p-lg bg-surface-container-lowest">
+<button class="w-full bg-primary text-on-primary py-md px-lg rounded-[10px] font-h3 text-h3 shadow-[0_4px_8px_rgba(0,105,76,0.1)] active:scale-95 transition-all flex justify-center items-center gap-md">
+<span>Generate My Summary · என் சுருக்கத்தை உருவாக்கு</span>
+<span class="material-symbols-outlined">auto_awesome</span>
+</button>
+</div>
+</article>
+<!-- Additional Contextual Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="bg-white p-md rounded-[14px] border border-secondary/10">
+<div class="flex items-center gap-xs mb-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span class="font-label-caps text-[10px] uppercase">Applicability</span>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant">Applies to all goods and services, including e-commerce transactions and tele-shopping.</p>
+</div>
+<div class="bg-white p-md rounded-[14px] border border-secondary/10">
+<div class="flex items-center gap-xs mb-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+<span class="font-label-caps text-[10px] uppercase">Timeline</span>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant">Claims must generally be filed within two years from the date the cause of action arose.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe bg-white dark:bg-slate-950 border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] z-50 rounded-t-2xl md:hidden">
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 transition-all active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined">translate</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Language</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Profile</span>
+</a>
+</nav>
+<!-- FAB (Suppressed on this detailed view per guidelines, but keeping structure if needed for context) -->
+<!-- The FAB is suppressed as per: "You MUST suppress the FAB on Settings, Profile, Details, and Transactional screens." -->
+</body></html>

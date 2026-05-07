@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#adf0da",
+                    "on-tertiary-container": "#f4fff9",
+                    "on-surface-variant": "#3d4943",
+                    "error": "#ba1a1a",
+                    "surface": "#f5fbf5",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#dee4de",
+                    "primary": "#00694c",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#dee4de",
+                    "surface-container": "#eaefea",
+                    "outline-variant": "#bccac1",
+                    "surface-container-low": "#eff5ef",
+                    "on-primary-container": "#f5fff7",
+                    "on-surface": "#171d1a",
+                    "on-tertiary-fixed-variant": "#095041",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#d6dbd6",
+                    "on-secondary-fixed": "#002018",
+                    "secondary-fixed-dim": "#92d4be",
+                    "on-secondary-container": "#2e6f5d",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#b0efdb",
+                    "tertiary-fixed-dim": "#94d3bf",
+                    "inverse-primary": "#68dbae",
+                    "inverse-on-surface": "#ecf2ed",
+                    "on-background": "#171d1a",
+                    "tertiary": "#276656",
+                    "surface-container-high": "#e4eae4",
+                    "on-error": "#ffffff",
+                    "secondary": "#276958",
+                    "primary-fixed": "#86f8c9",
+                    "surface-tint": "#006c4e",
+                    "primary-container": "#008560",
+                    "on-primary-fixed": "#002115",
+                    "primary-fixed-dim": "#68dbae",
+                    "tertiary-container": "#427f6e",
+                    "background": "#f5fbf5",
+                    "surface-bright": "#f5fbf5",
+                    "inverse-surface": "#2c322e",
+                    "on-tertiary-fixed": "#002019",
+                    "secondary-fixed": "#adf0da",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#025140",
+                    "on-primary-fixed-variant": "#00513a",
+                    "outline": "#6d7a73"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "md": "16px",
+                    "gutter": "12px",
+                    "sm": "12px",
+                    "lg": "24px",
+                    "xl": "32px",
+                    "container-margin": "20px",
+                    "xs": "8px"
+            },
+            "fontFamily": {
+                    "tamil-body": ["Noto Sans Tamil"],
+                    "label-caps": ["Public Sans"],
+                    "h3": ["Poppins"],
+                    "h2": ["Poppins"],
+                    "body-md": ["Public Sans"],
+                    "h1": ["Poppins"],
+                    "body-lg": ["Public Sans"]
+            },
+            "fontSize": {
+                    "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #f5fbf5; min-height: 100vh; display: flex; flex-direction: column; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-surface">
+<!-- TopAppBar -->
+<nav class="bg-emerald-600 dark:bg-emerald-900 border-b border-emerald-700 dark:border-emerald-800 shadow-sm docked full-width top-0 z-50 flex justify-between items-center w-full px-5 py-3 h-16 sticky">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-white cursor-pointer">menu</span>
+<h1 class="font-lexend font-black text-xl text-white">RightsQuest</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-white cursor-pointer">account_circle</span>
+</div>
+</nav>
+<!-- Content Canvas -->
+<main class="flex-1 px-container-margin py-lg max-w-md mx-auto w-full">
+<!-- Case Header -->
+<header class="mb-lg">
+<div class="flex items-center gap-xs mb-base">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">gavel</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Case Study</span>
+</div>
+<h2 class="font-h2 text-h2 text-on-surface leading-tight">
+                Rent Dispute · <span class="font-tamil-body">வாடகை பிரச்சனை</span>
+</h2>
+</header>
+<!-- Progress Section -->
+<section class="mb-xl">
+<div class="flex justify-between items-end mb-xs">
+<span class="font-label-caps text-label-caps text-primary">STEP 1 OF 5</span>
+<span class="font-label-caps text-label-caps text-outline">20% COMPLETE</span>
+</div>
+<div class="h-2 w-full bg-primary/20 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-1/5"></div>
+</div>
+</section>
+<!-- Context Card (Bento-style layout) -->
+<div class="grid grid-cols-1 gap-lg">
+<div class="bg-white border border-primary/10 rounded-[14px] p-md shadow-sm relative overflow-hidden">
+<!-- Decorative element -->
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -mr-8 -mt-8"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary-container mb-sm" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="space-y-md">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                            "We found a house we liked. The landlord was ready to sign, but he demanded 6 months' rent as an advance deposit and said an oral agreement is enough. 'This is how it works in Chennai,' he said."
+                        </p>
+<hr class="border-surface-container-highest"/>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant italic">
+                            "நாங்கள் விரும்பிய ஒரு வீட்டைக் கண்டோம். நில உரிமையாளர் கையெழுத்திடத் தயாராக இருந்தார், ஆனால் அவர் 6 மாத வாடகையை முன்பணமாகக் கேட்டார் மற்றும் வாய்மொழி ஒப்பந்தமே போதுமானது என்றார். 'சென்னையில் இப்படித்தான் நடக்கும்' என்று அவர் கூறினார்."
+                        </p>
+</div>
+</div>
+</div>
+<!-- Visual Context Image -->
+<div class="rounded-[14px] overflow-hidden aspect-video border border-primary/5">
+<img class="w-full h-full object-cover" data-alt="A cinematic, high-angle shot of a residential street in Chennai during the golden hour, featuring vibrant apartment buildings with traditional architecture. The scene captures a sense of urban domestic life with warm sunlight casting long shadows across the textured surfaces. The overall aesthetic is professional and clean, reflecting an institutional trust and legal context with a calm, high-contrast color palette of deep emerald greens and soft off-whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkLfT-xXdcvwwajkJ7gZi6_DEtm-aWlyuKF4gRKFlVIKK6jeQaymi_xLdKOoWhCRL1PD_ss4IdYZHxsZrSYVzC10SIBEFXdyeaYlVy5qMG6Nbx77xLBW7fW4zvfbHMGMWGmcP6eE6UPSlEAUikX5e3d8J0RSczgfLCqg1iz1unds3Z1D7VrZYeQYmRSaO9XqfbR0-AbAnaCVq1uDXtEw6Q4qQ4Nc0EVQyMIDeoCCxUWOAl-hxMF7VWDWZooPLhz7ptJDKp6Yf_Didq"/>
+</div>
+</div>
+<!-- Action Section -->
+<section class="mt-xl mb-32">
+<button class="w-full bg-[#1D9E75] text-white py-4 px-lg rounded-[10px] font-h3 text-h3 shadow-md active:scale-95 transition-transform flex flex-col items-center gap-1">
+<span>What do you do?</span>
+<span class="font-tamil-body text-sm font-normal">நீங்கள் என்ன செய்வீர்கள்?</span>
+</button>
+<p class="text-center mt-md font-label-caps text-label-caps text-outline">TAP TO CHOOSE YOUR LEGAL PATH</p>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-white dark:bg-slate-950 border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe z-50 rounded-t-2xl">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Learn</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">gavel</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Legal Aid</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>

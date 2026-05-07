@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-fixed-variant": "#095041",
+                "on-background": "#171d1a",
+                "surface-bright": "#f5fbf5",
+                "error": "#ba1a1a",
+                "on-primary-fixed": "#002115",
+                "on-error": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed": "#adf0da",
+                "surface-container-high": "#e4eae4",
+                "inverse-on-surface": "#ecf2ed",
+                "surface-container": "#eaefea",
+                "outline": "#6d7a73",
+                "on-error-container": "#93000a",
+                "inverse-surface": "#2c322e",
+                "error-container": "#ffdad6",
+                "background": "#f5fbf5",
+                "surface-container-lowest": "#ffffff",
+                "surface-tint": "#006c4e",
+                "on-tertiary-container": "#f4fff9",
+                "on-primary-fixed-variant": "#00513a",
+                "primary": "#00694c",
+                "surface-variant": "#dee4de",
+                "on-primary": "#ffffff",
+                "inverse-primary": "#68dbae",
+                "surface": "#f5fbf5",
+                "secondary-fixed-dim": "#92d4be",
+                "secondary-container": "#adf0da",
+                "tertiary": "#276656",
+                "on-tertiary-fixed": "#002019",
+                "surface-container-low": "#eff5ef",
+                "on-secondary-fixed-variant": "#025140",
+                "on-primary-container": "#f5fff7",
+                "surface-container-highest": "#dee4de",
+                "primary-fixed": "#86f8c9",
+                "on-surface": "#171d1a",
+                "secondary": "#276958",
+                "on-secondary": "#ffffff",
+                "primary-container": "#008560",
+                "outline-variant": "#bccac1",
+                "tertiary-fixed": "#b0efdb",
+                "tertiary-fixed-dim": "#94d3bf",
+                "primary-fixed-dim": "#68dbae",
+                "tertiary-container": "#427f6e",
+                "on-surface-variant": "#3d4943",
+                "on-secondary-container": "#2e6f5d",
+                "surface-dim": "#d6dbd6",
+                "on-secondary-fixed": "#002018"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "gutter": "12px",
+                "md": "16px",
+                "base": "4px",
+                "container-margin": "20px",
+                "xs": "8px",
+                "xl": "32px",
+                "sm": "12px",
+                "lg": "24px"
+            },
+            "fontFamily": {
+                "tamil-body": ["Noto Sans Tamil"],
+                "label-caps": ["Public Sans"],
+                "h1": ["Poppins"],
+                "body-lg": ["Public Sans"],
+                "h2": ["Poppins"],
+                "body-md": ["Public Sans"],
+                "h3": ["Poppins"],
+                "lexend": ["Lexend"]
+            },
+            "fontSize": {
+                "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f5fbf5;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16 sticky">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-white">menu</span>
+<h1 class="font-lexend font-bold tracking-tight text-lg text-white">Your Situation Summary · உங்கள் நிலை</h1>
+</div>
+<span class="material-symbols-outlined text-white">account_circle</span>
+</header>
+<main class="px-container-margin py-lg pb-32">
+<!-- Main Report Card -->
+<div class="bg-white border border-primary/10 rounded-[14px] shadow-sm overflow-hidden mb-lg">
+<div class="p-md space-y-lg">
+<!-- Section 1: Situation -->
+<section>
+<div class="flex items-center gap-xs mb-xs text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">description</span>
+<h2 class="font-label-caps text-label-caps uppercase text-primary">Situation</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-xs">
+                        You bought a product that stopped working shortly after purchase, and the seller refused to provide a replacement or refund.
+                    </p>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant italic">
+                        நீங்கள் வாங்கிய ஒரு பொருள் குறுகிய காலத்திலேயே வேலை செய்வதை நிறுத்திவிட்டது, மேலும் விற்பனையாளர் அதற்குப் பதிலாக மாற்றுப் பொருள் அல்லது பணத்தைத் திரும்பத் தர மறுத்துவிட்டார்.
+                    </p>
+</section>
+<hr class="border-outline-variant/30"/>
+<!-- Section 2: What this means -->
+<section>
+<div class="flex items-center gap-xs mb-xs text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">gavel</span>
+<h2 class="font-label-caps text-label-caps uppercase text-primary">What this means</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-xs">
+                        This situation may be a concern under the Consumer Protection Act. Refusing to address defective goods within warranty can be challenged through the appropriate consumer forum.
+                    </p>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant italic">
+                        இந்தச் சூழ்நிலை நுகர்வோர் பாதுகாப்புச் சட்டத்தின் கீழ் ஒரு கவலையாக இருக்கலாம். உத்தரவாத காலத்திற்குள் குறைபாடுள்ள பொருட்களை சரிசெய்ய மறுப்பதை பொருத்தமான நுகர்வோர் மன்றம் மூலம் சவாலுக்கு உட்படுத்தலாம்.
+                    </p>
+</section>
+<!-- Section 3: What you can do (Bento-style list) -->
+<section class="bg-surface-container-low rounded-xl p-md">
+<div class="flex items-center gap-xs mb-md text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">assignment_turned_in</span>
+<h2 class="font-label-caps text-label-caps uppercase text-primary">What you can do</h2>
+</div>
+<ul class="space-y-md">
+<li class="flex gap-sm">
+<span class="text-primary font-bold">•</span>
+<div>
+<p class="font-body-md text-body-md font-bold">Send a formal written complaint to the seller/company</p>
+<p class="font-tamil-body text-sm text-on-surface-variant">விற்பனையாளர்/நிறுவனத்திற்கு முறையான எழுத்துப்பூர்வ புகாரை அனுப்பவும்</p>
+</div>
+</li>
+<li class="flex gap-sm">
+<span class="text-primary font-bold">•</span>
+<div>
+<p class="font-body-md text-body-md font-bold">Keep your original bill and warranty card safe</p>
+<p class="font-tamil-body text-sm text-on-surface-variant">உங்கள் அசல் பில் மற்றும் உத்தரவாத அட்டையைப் பத்திரமாக வைத்திருங்கள்</p>
+</div>
+</li>
+<li class="flex gap-sm">
+<span class="text-primary font-bold">•</span>
+<div>
+<p class="font-body-md text-body-md font-bold">Approach the Consumer Helpline or District Forum for support</p>
+<p class="font-tamil-body text-sm text-on-surface-variant">ஆதரவிற்காக நுகர்வோர் உதவி மையம் அல்லது மாவட்ட நுகர்வோர் மன்றத்தை அணுகவும்</p>
+</div>
+</li>
+</ul>
+</section>
+<!-- Section 4: What to keep -->
+<section>
+<div class="flex items-center gap-xs mb-md text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<h2 class="font-label-caps text-label-caps uppercase text-primary">What to keep</h2>
+</div>
+<div class="grid grid-cols-2 gap-sm">
+<div class="p-sm bg-primary-container/10 border border-primary-container/20 rounded-lg">
+<p class="text-[11px] font-bold text-primary-container uppercase tracking-widest mb-1">Timeline</p>
+<p class="text-xs font-medium">Date of purchase and defect</p>
+</div>
+<div class="p-sm bg-primary-container/10 border border-primary-container/20 rounded-lg">
+<p class="text-[11px] font-bold text-primary-container uppercase tracking-widest mb-1">Entity</p>
+<p class="text-xs font-medium">Shop and brand details</p>
+</div>
+<div class="p-sm bg-primary-container/10 border border-primary-container/20 rounded-lg">
+<p class="text-[11px] font-bold text-primary-container uppercase tracking-widest mb-1">Issue</p>
+<p class="text-xs font-medium">Exact issue with the product</p>
+</div>
+<div class="p-sm bg-primary-container/10 border border-primary-container/20 rounded-lg">
+<p class="text-[11px] font-bold text-primary-container uppercase tracking-widest mb-1">Evidence</p>
+<p class="text-xs font-medium">Original bill and photos of the defect</p>
+</div>
+</div>
+</section>
+<!-- Footer Note -->
+<footer class="pt-md border-t border-outline-variant/30 text-center">
+<p class="text-[11px] text-on-surface-variant font-body-md italic leading-relaxed">
+                        This information is for awareness only. Actual legal rules and procedures may vary. Please verify with the appropriate authority.
+                    </p>
+</footer>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex gap-md mb-xl">
+<button class="flex-1 bg-primary text-white h-12 rounded-[10px] font-lexend font-bold shadow-md active:scale-95 transition-transform flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+                Save · சேமி
+            </button>
+<button class="flex-1 bg-secondary-container text-on-secondary-container h-12 rounded-[10px] font-lexend font-bold active:scale-95 transition-transform flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-[20px]">share</span>
+                Share · பகிர்
+            </button>
+</div>
+<!-- Legal Decorative Image -->
+<div class="w-full h-32 rounded-xl overflow-hidden relative mb-4">
+<img alt="Legal scales" class="w-full h-full object-cover opacity-80" data-alt="A dignified and professional close-up shot of a bronze scale of justice resting on a polished dark wooden table in a law library. The background features blurred, leather-bound legal volumes on shelves, creating an atmosphere of institutional trust and authority. The lighting is warm and directional, highlighting the metallic texture of the scales while maintaining a serene and accessible modern corporate aesthetic. The overall color palette is dominated by deep greens and earthy browns, aligned with a legal education environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzRzervIKLbmjC_15Ye498ohYa1_UsE2BLLCfDK3Kf4b-lKGw9aHK-JvJpRqqpAsMavF3YMKASaaJJS_rx9QjHM8fzw1Sto3Pnru2xAcQulx4vJBSssliHZlqK4iZ8MGioSmVaR86EdHTpXZNABW5q1ai4Ex-q389HYcoXbvO9rQm_gEM3PaGh277jPsNz5jQMxZraAgEvZ14acZy3QB0DDwVyg_OBQED1qj6FN4q0psOmO699xZtcvWiyaD76qOQ-fSmUHHrxFMV9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe bg-white dark:bg-slate-950 border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] z-50 rounded-t-2xl">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bookmarks</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">translate</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Language</span>
+</a>
+</nav>
+</body></html>

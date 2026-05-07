@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RightsQuest - POSH Act Scenarios</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f5fbf5;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#095041",
+                    "on-primary-fixed-variant": "#00513a",
+                    "tertiary-fixed": "#b0efdb",
+                    "outline-variant": "#bccac1",
+                    "inverse-on-surface": "#ecf2ed",
+                    "secondary-fixed": "#adf0da",
+                    "on-surface-variant": "#3d4943",
+                    "on-tertiary-fixed": "#002019",
+                    "on-primary-container": "#f5fff7",
+                    "on-tertiary-container": "#f4fff9",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#d6dbd6",
+                    "primary-container": "#008560",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#2c322e",
+                    "primary-fixed-dim": "#68dbae",
+                    "on-secondary-fixed-variant": "#025140",
+                    "on-secondary-container": "#2e6f5d",
+                    "surface-container": "#eaefea",
+                    "primary-fixed": "#86f8c9",
+                    "outline": "#6d7a73",
+                    "secondary": "#276958",
+                    "tertiary": "#276656",
+                    "on-primary-fixed": "#002115",
+                    "tertiary-fixed-dim": "#94d3bf",
+                    "background": "#f5fbf5",
+                    "surface-bright": "#f5fbf5",
+                    "surface-container-highest": "#dee4de",
+                    "surface-variant": "#dee4de",
+                    "surface": "#f5fbf5",
+                    "tertiary-container": "#427f6e",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#002018",
+                    "on-background": "#171d1a",
+                    "surface-tint": "#006c4e",
+                    "on-surface": "#171d1a",
+                    "primary": "#00694c",
+                    "inverse-primary": "#68dbae",
+                    "surface-container-high": "#e4eae4",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#adf0da",
+                    "surface-container-low": "#eff5ef",
+                    "secondary-fixed-dim": "#92d4be",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "16px",
+                    "container-margin": "20px",
+                    "base": "4px",
+                    "xl": "32px",
+                    "sm": "12px",
+                    "lg": "24px",
+                    "xs": "8px",
+                    "gutter": "12px"
+            },
+            "fontFamily": {
+                    "h3": ["Poppins"],
+                    "tamil-body": ["Noto Sans Tamil"],
+                    "label-caps": ["Public Sans"],
+                    "h1": ["Poppins"],
+                    "h2": ["Poppins"],
+                    "body-md": ["Public Sans"],
+                    "body-lg": ["Public Sans"],
+                    "lexend": ["Lexend"]
+            },
+            "fontSize": {
+                    "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-background min-h-screen flex flex-col pb-24">
+<!-- TopAppBar from Shared Components JSON -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16 sticky">
+<button class="material-symbols-outlined text-white font-lexend font-bold tracking-tight text-lg hover:bg-emerald-500/20 transition-colors p-2 rounded-lg" data-icon="menu">menu</button>
+<span class="text-white font-lexend font-black text-xl">RightsQuest</span>
+<button class="material-symbols-outlined text-white font-lexend font-bold tracking-tight text-lg hover:bg-emerald-500/20 transition-colors p-2 rounded-lg" data-icon="account_circle">account_circle</button>
+</header>
+<!-- Content Canvas -->
+<main class="flex-grow px-container-margin pt-lg">
+<!-- Header Section -->
+<div class="mb-lg">
+<h1 class="font-h1 text-h1 text-primary mb-xs">POSH Act</h1>
+<p class="font-tamil-body text-tamil-body text-secondary-container bg-primary-container px-3 py-1 rounded-lg inline-block mb-md">
+                பணியிட பாலியல் வன்கொடுமை தடுப்புச் சட்டம்
+            </p>
+<p class="font-body-md text-on-surface-variant italic opacity-80 mt-xs">
+                Choose your situation · உங்கள் சூழ்நிலையைத் தேர்ந்தெடுக்கவும்
+            </p>
+</div>
+<!-- Bento-style Card Grid -->
+<div class="grid grid-cols-1 gap-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 rounded-[14px] p-md flex items-center gap-md shadow-sm active:scale-[0.98] transition-transform">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl">
+<span class="material-symbols-outlined text-[28px]" data-icon="forum">forum</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-h3 text-h3 text-on-surface text-[16px] leading-tight">Verbal harassment</h3>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant text-[14px]">வார்த்தைகள் மூலம் பாலியல் துன்புறுத்தல்</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 rounded-[14px] p-md flex items-center gap-md shadow-sm active:scale-[0.98] transition-transform">
+<div class="w-12 h-12 flex items-center justify-center bg-error-container text-on-error-container rounded-xl">
+<span class="material-symbols-outlined text-[28px]" data-icon="back_hand">back_hand</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-h3 text-h3 text-on-surface text-[16px] leading-tight">Physical harassment</h3>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant text-[14px]">உடல்ரீதியான பாலியல் துன்புறுத்தல்</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 rounded-[14px] p-md flex items-center gap-md shadow-sm active:scale-[0.98] transition-transform">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-variant text-on-surface-variant rounded-xl">
+<span class="material-symbols-outlined text-[28px]" data-icon="corporate_fare">corporate_fare</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-h3 text-h3 text-on-surface text-[16px] leading-tight">No ICC in office</h3>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant text-[14px]">அலுவலகத்தில் ICC இல்லாமை</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 rounded-[14px] p-md flex items-center gap-md shadow-sm active:scale-[0.98] transition-transform">
+<div class="w-12 h-12 flex items-center justify-center bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-xl">
+<span class="material-symbols-outlined text-[28px]" data-icon="notifications_off">notifications_off</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-h3 text-h3 text-on-surface text-[16px] leading-tight">Complaint ignored</h3>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant text-[14px]">புகார் மீது நடவடிக்கை எடுக்கப்படாமை</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 rounded-[14px] p-md flex items-center gap-md shadow-sm active:scale-[0.98] transition-transform">
+<div class="w-12 h-12 flex items-center justify-center bg-primary-fixed text-on-primary-fixed-variant rounded-xl">
+<span class="material-symbols-outlined text-[28px]" data-icon="cached">cached</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-h3 text-h3 text-on-surface text-[16px] leading-tight">Retaliation after complaint</h3>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant text-[14px]">புகார் அளித்ததற்காக பழிவாங்கும் நடவடிக்கை</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 rounded-[14px] p-md flex items-center gap-md shadow-sm active:scale-[0.98] transition-transform">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl">
+<span class="material-symbols-outlined text-[28px]" data-icon="groups">groups</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-h3 text-h3 text-on-surface text-[16px] leading-tight">Harassment by client</h3>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant text-[14px]">வாடிக்கையாளரால் பாலியல் துன்புறுத்தல்</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 7 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 rounded-[14px] p-md flex items-center gap-md shadow-sm active:scale-[0.98] transition-transform">
+<div class="w-12 h-12 flex items-center justify-center bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-xl">
+<span class="material-symbols-outlined text-[28px]" data-icon="computer">computer</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-h3 text-h3 text-on-surface text-[16px] leading-tight">Work from home harassment</h3>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant text-[14px]">வீட்டில் இருந்து வேலை செய்யும்போது துன்புறுத்தல்</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Card 8 -->
+<div class="bg-surface-container-lowest border border-on-surface/10 rounded-[14px] p-md flex items-center gap-md shadow-sm active:scale-[0.98] transition-transform">
+<div class="w-12 h-12 flex items-center justify-center bg-primary-fixed-dim text-on-primary-fixed-variant rounded-xl">
+<span class="material-symbols-outlined text-[28px]" data-icon="home">home</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-h3 text-h3 text-on-surface text-[16px] leading-tight">Domestic worker rights</h3>
+<p class="font-tamil-body text-tamil-body text-on-surface-variant text-[14px]">வீட்டு வேலை செய்பவர்களின் உரிமைகள்</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Educational Prompt Card -->
+<div class="mt-xl mb-md">
+<div class="relative overflow-hidden rounded-[14px] bg-primary text-white p-lg shadow-lg">
+<div class="relative z-10">
+<span class="font-label-caps text-label-caps bg-white/20 px-2 py-1 rounded mb-xs inline-block">KNOW YOUR RIGHTS</span>
+<h2 class="font-h2 text-h2 mb-xs">Unsure about your case?</h2>
+<p class="font-body-md text-on-primary opacity-90">Take our 2-minute assessment to understand your legal standing under the POSH Act.</p>
+<button class="mt-md bg-white text-primary font-bold px-lg py-sm rounded-lg hover:bg-surface transition-colors shadow-md">
+                        Start Assessment
+                    </button>
+</div>
+<!-- Decorative background image -->
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-20 pointer-events-none">
+<img alt="" class="w-full h-full object-cover" data-alt="A sophisticated digital illustration of a Lady Justice scales symbol rendered in a modern glassmorphism style. The color palette features deep emerald greens and crisp white accents, illuminated by soft studio lighting. The background is a minimalist, clean gradient that fits a high-end corporate law application aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQhAt9RgfNFQPCVV79wDBhhPpriVVamcxmO7Tas2sh65pZZrtjk2X_KmHquhSLr1kgHvueC7BmjGiQnkQriK5t7GHLQ-huZWg75HdRa6pSJBGw9gFKkESKkt6R_SDVy9IHorQ2Er0GgPE1hsFg-5hGjqtK0kZ15FhyRDcT_a58I-0Z4HogxHqr4lfIB8n9kkevKEX51tZabqbv0YWDN4nEn0dWzp3peSyW3vPTgW5LUfDq0mu7oivPEP8qY8cpgXcRN-Ef5H76e9Zd"/>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar from Shared Components JSON -->
+<nav class="bg-white dark:bg-slate-950 text-emerald-600 dark:text-emerald-400 font-lexend font-medium text-[10px] uppercase tracking-wider docked full-width bottom-0 z-50 rounded-t-2xl border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe">
+<button class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="mt-1">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="mt-1">Learn</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span class="mt-1">Legal Aid</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="mt-1">Profile</span>
+</button>
+</nav>
+</body></html>
