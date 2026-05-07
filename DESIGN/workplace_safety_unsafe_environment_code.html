@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RightsQuest - The Outcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;family=Public+Sans:wght@400;700&amp;family=Poppins:wght@500;600&amp;family=Noto+Sans+Tamil:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #f5fbf5;
+        }
+        .font-lexend { font-family: 'Lexend', sans-serif; }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#276656",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#f4fff9",
+                    "on-primary-fixed-variant": "#00513a",
+                    "tertiary-fixed": "#b0efdb",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f5fbf5",
+                    "inverse-surface": "#2c322e",
+                    "on-surface-variant": "#3d4943",
+                    "inverse-on-surface": "#ecf2ed",
+                    "surface-container-low": "#eff5ef",
+                    "on-surface": "#171d1a",
+                    "secondary-fixed-dim": "#92d4be",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#86f8c9",
+                    "on-tertiary-fixed-variant": "#095041",
+                    "secondary-fixed": "#adf0da",
+                    "on-secondary-fixed-variant": "#025140",
+                    "surface-tint": "#006c4e",
+                    "on-tertiary-fixed": "#002019",
+                    "secondary-container": "#adf0da",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#bccac1",
+                    "primary-container": "#008560",
+                    "outline": "#6d7a73",
+                    "primary": "#00694c",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#e4eae4",
+                    "surface-container": "#eaefea",
+                    "on-secondary-fixed": "#002018",
+                    "tertiary-fixed-dim": "#94d3bf",
+                    "surface-container-highest": "#dee4de",
+                    "inverse-primary": "#68dbae",
+                    "primary-fixed-dim": "#68dbae",
+                    "on-primary-fixed": "#002115",
+                    "surface-variant": "#dee4de",
+                    "surface-bright": "#f5fbf5",
+                    "on-background": "#171d1a",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#427f6e",
+                    "surface-dim": "#d6dbd6",
+                    "secondary": "#276958",
+                    "surface": "#f5fbf5",
+                    "on-secondary-container": "#2e6f5d",
+                    "on-primary-container": "#f5fff7",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "16px",
+                    "base": "4px",
+                    "container-margin": "20px",
+                    "sm": "12px",
+                    "gutter": "12px",
+                    "xl": "32px",
+                    "xs": "8px",
+                    "lg": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Public Sans"],
+                    "tamil-body": ["Noto Sans Tamil"],
+                    "h3": ["Poppins"],
+                    "h2": ["Poppins"],
+                    "h1": ["Poppins"],
+                    "body-md": ["Public Sans"],
+                    "label-caps": ["Public Sans"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface selection:bg-primary/20 text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 border-b border-emerald-700 dark:border-emerald-800 shadow-sm docked full-width top-0 z-50 fixed w-full">
+<div class="flex justify-between items-center w-full px-5 py-3 h-16">
+<div class="flex items-center gap-3">
+<button class="hover:bg-emerald-500/20 transition-colors p-2 rounded-full text-white">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-white font-lexend font-black text-xl tracking-tight">RightsQuest</h1>
+</div>
+<div class="flex items-center">
+<button class="hover:bg-emerald-500/20 transition-colors p-2 rounded-full text-white">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-container-margin max-w-lg mx-auto min-h-screen">
+<!-- Result Header -->
+<div class="mb-lg flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-error/10 flex items-center justify-center text-error border border-error/20">
+<span class="material-symbols-outlined text-3xl" data-icon="cancel">cancel</span>
+</div>
+<div>
+<h2 class="font-lexend font-bold text-lg text-primary">The Outcome · முடிவு</h2>
+<p class="text-sm text-outline font-medium">Scenario Path: Silence/Resignation</p>
+</div>
+</div>
+<!-- Main Content Card (Bento-style layout) -->
+<div class="grid grid-cols-1 gap-md">
+<!-- Unsafe Environment Card -->
+<div class="bg-surface-container-lowest border border-on-surface/10 rounded-[14px] overflow-hidden shadow-sm">
+<div class="relative h-48 w-full">
+<img alt="Silent office corridor" class="w-full h-full object-cover" data-alt="A cinematic, low-angle shot of an empty, dimly lit office corridor in a modern corporate building. The lighting is cold and atmospheric, creating long shadows that evoke a sense of isolation and quiet tension. The color palette features deep greens and muted greys, consistent with an institutional yet somber mood. High-contrast surfaces reflect the overhead fluorescent lights, emphasizing the stillness of a deserted workspace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSNT1gAdnuALzqlkXvZ6Grr_chwt4VbT9ngxZXGYKdKEe3_LWM7ptBNxGuOU1Q9-5IfWqjWLTWOOJL1U_ZXvBC_283_t2x_y6ZgveIXweSmHQlOWRhOx2m_Cx7tgeYHPlSvUADCq-ZaOaK91nvVj5zf89mrnbK__XrFmFum9uAXCALzUGas3sgP6zRw5pWrkx2m0OwP4cm-ufAcO95KrB0815IpivM7V6m8KyCRdR5Nw9rzBGOuGh_fq1fsO3SpqMBvrfOX3FnbFs3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-error text-white font-lexend font-bold text-sm px-3 py-1 rounded-full uppercase tracking-wider">
+                            Unsafe Environment · பாதுகாப்பற்ற சூழல்
+                        </span>
+</div>
+</div>
+<div class="p-md space-y-lg">
+<div class="space-y-sm">
+<p class="font-body-lg text-on-surface leading-relaxed">
+                            You left the job to protect your peace. While understandable, you lost your income, and the harasser remains free to do this to the next woman who joins.
+                        </p>
+<p class="font-tamil-body text-outline leading-relaxed border-l-4 border-error/30 pl-4 italic">
+                            உங்கள் நிம்மதிக்காக நீங்கள் வேலையை விட்டு விலகினீர்கள். ஆனால் நீங்கள் வருமானத்தை இழந்தீர்கள், தவறான நடத்தை கொண்ட அந்த நபர் புதிதாக வரும் பெண்களிடமும் இதையே தொடர்வார்.
+                        </p>
+</div>
+<!-- Progress Indicator for Learning Flow -->
+<div class="space-y-2">
+<div class="flex justify-between text-[10px] font-bold uppercase tracking-widest text-outline">
+<span>Awareness Level</span>
+<span>Critical</span>
+</div>
+<div class="w-full h-2 bg-primary/20 rounded-full overflow-hidden">
+<div class="w-1/3 h-full bg-error"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Insight Section -->
+<div class="bg-tertiary-fixed/30 border border-tertiary/10 p-md rounded-[14px]">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-tertiary" data-icon="lightbulb">lightbulb</span>
+<p class="font-body-md text-on-tertiary-fixed-variant font-medium">
+                        You shouldn't have to lose your job because of someone else's behavior. Let's see your rights.
+                    </p>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-primary text-white font-lexend font-bold py-4 px-6 rounded-[10px] flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-all mt-4">
+<span class="material-symbols-outlined" data-icon="undo">undo</span>
+                Try another route · வேறு முடிவை முயற்சிக்கவும்
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full bg-white dark:bg-slate-950 border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] rounded-t-2xl z-50">
+<div class="flex justify-around items-center px-4 py-2 pb-safe">
+<!-- Home (Inactive) -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Home</span>
+</a>
+<!-- Learn (Active - assuming we are in the learning flow) -->
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Learn</span>
+</a>
+<!-- Legal Aid -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Legal Aid</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

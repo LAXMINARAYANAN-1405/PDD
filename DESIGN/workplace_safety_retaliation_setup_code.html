@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #f5fbf5;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-tint": "#006c4e",
+                      "secondary-fixed-dim": "#92d4be",
+                      "on-tertiary": "#ffffff",
+                      "surface-dim": "#d6dbd6",
+                      "primary": "#00694c",
+                      "on-primary-fixed": "#002115",
+                      "surface": "#f5fbf5",
+                      "on-tertiary-container": "#f4fff9",
+                      "secondary-container": "#adf0da",
+                      "on-surface-variant": "#3d4943",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#008560",
+                      "outline": "#6d7a73",
+                      "on-secondary-fixed": "#002018",
+                      "surface-container-high": "#e4eae4",
+                      "on-surface": "#171d1a",
+                      "on-tertiary-fixed-variant": "#095041",
+                      "tertiary": "#276656",
+                      "surface-bright": "#f5fbf5",
+                      "on-secondary-fixed-variant": "#025140",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed": "#b0efdb",
+                      "on-secondary-container": "#2e6f5d",
+                      "inverse-surface": "#2c322e",
+                      "surface-container": "#eaefea",
+                      "on-primary-fixed-variant": "#00513a",
+                      "tertiary-fixed-dim": "#94d3bf",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#86f8c9",
+                      "secondary": "#276958",
+                      "error-container": "#ffdad6",
+                      "outline-variant": "#bccac1",
+                      "inverse-on-surface": "#ecf2ed",
+                      "surface-variant": "#dee4de",
+                      "primary-fixed-dim": "#68dbae",
+                      "surface-container-low": "#eff5ef",
+                      "surface-container-highest": "#dee4de",
+                      "on-primary": "#ffffff",
+                      "on-background": "#171d1a",
+                      "tertiary-container": "#427f6e",
+                      "background": "#f5fbf5",
+                      "secondary-fixed": "#adf0da",
+                      "on-tertiary-fixed": "#002019",
+                      "inverse-primary": "#68dbae",
+                      "on-primary-container": "#f5fff7",
+                      "on-error": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "12px",
+                      "base": "4px",
+                      "lg": "24px",
+                      "container-margin": "20px",
+                      "sm": "12px",
+                      "md": "16px",
+                      "xs": "8px",
+                      "xl": "32px"
+              },
+              "fontFamily": {
+                      "tamil-body": ["Noto Sans Tamil"],
+                      "h2": ["Poppins"],
+                      "body-lg": ["Public Sans"],
+                      "h1": ["Poppins"],
+                      "h3": ["Poppins"],
+                      "label-caps": ["Public Sans"],
+                      "body-md": ["Public Sans"],
+                      "lexend": ["Lexend"]
+              },
+              "fontSize": {
+                      "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                      "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- Top App Bar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16">
+<div class="flex items-center gap-4">
+<button class="hover:bg-emerald-500/20 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined text-white">menu</span>
+</button>
+<h1 class="font-lexend font-black text-xl text-white">RightsQuest</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden md:block font-lexend font-bold tracking-tight text-lg text-white">Workplace Safety</span>
+<button class="hover:bg-emerald-500/20 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined text-white">account_circle</span>
+</button>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-container-margin py-lg max-w-2xl">
+<!-- Progress Indicator -->
+<div class="mb-xl">
+<div class="flex justify-between items-center mb-xs">
+<span class="text-label-caps font-label-caps text-primary uppercase">Step 1 of 5</span>
+<span class="text-label-caps font-label-caps text-outline">Scenario Setup</span>
+</div>
+<div class="w-full bg-primary/20 h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-1/5 rounded-full transition-all duration-500"></div>
+</div>
+</div>
+<!-- Hero Scene Image -->
+<div class="mb-lg rounded-xl overflow-hidden shadow-sm border border-primary/10">
+<img class="w-full h-48 object-cover" data-alt="A professional and modern corporate office environment with clean lines and soft, natural lighting. In the background, blurred office workers and sleek glass partitions suggest a bustling workplace. The atmosphere is calm and institutional, using a palette of deep greens and soft off-whites to match the legal education brand identity. The high-key lighting creates a sense of clarity and accessibility, emphasizing a space of professional conduct." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYAaFCxKelWBQIlWNFbmaRqKlPe_ejsLqcvHvrbC4ATVt_B3yjpNFe1JtdDbK3OSfCktaaY29UXxDybPqLmvYvUpb8au-czHBgX4PkLSg3DroP_VkQORunprrPCSawWd3_lAx3xTLPQFR_slyXkp_9MxNZs0slJX0Z1n7MuJEo2L9E1udKZ4VKNdD11g24nLhH_a2nOD2T7nneFaK7TO9c7mSdpvHhXip8d1_9DHqPnE1Lw7HA9CxQf4tO_UWmpBPb_MyhoUyg6TBX"/>
+</div>
+<!-- Content Card -->
+<section class="bg-white rounded-[14px] border border-primary/10 p-md md:p-lg shadow-[0_4px_12px_rgba(0,0,0,0.05)] space-y-md">
+<div class="space-y-sm">
+<h2 class="text-h2 font-h2 text-primary flex items-center gap-2">
+<span class="material-symbols-outlined">gavel</span>
+                    Workplace Safety · பணியிடப் பாதுகாப்பு
+                </h2>
+<div class="h-px w-full bg-primary/5"></div>
+</div>
+<div class="space-y-md">
+<div class="space-y-xs">
+<p class="text-body-lg font-body-lg text-on-surface leading-relaxed">
+                        "You bravely filed a harassment complaint against a senior colleague. A week later, you are suddenly transferred to a different branch without reason, and your main project is taken away."
+                    </p>
+</div>
+<div class="bg-surface-container-low p-md rounded-xl border-l-4 border-primary">
+<p class="text-tamil-body font-tamil-body text-on-secondary-container">
+                        "நீங்கள் தைரியமாக ஒரு மூத்த சக ஊழியர் மீது பாலியல் துன்புறுத்தல் புகார் அளித்தீர்கள். ஒரு வாரம் கழித்து, எந்த காரணமும் இன்றி நீங்கள் திடீரென வேறு கிளைக்கு மாற்றப்படுகிறீர்கள், உங்கள் முக்கியப் பணியும் பறிக்கப்படுகிறது."
+                    </p>
+</div>
+</div>
+<div class="pt-lg">
+<button class="w-full bg-[#1D9E75] hover:bg-primary-container text-white py-4 px-6 rounded-[10px] font-bold text-body-lg flex justify-center items-center gap-2 shadow-[0_4px_8px_rgba(29,158,117,0.2)] transition-transform active:scale-[0.98]">
+<span>What do you do? · நீங்கள் என்ன செய்வீர்கள்?</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Tip Section -->
+<div class="mt-lg flex gap-md items-start p-md bg-secondary-container/30 rounded-xl border border-secondary-container">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<div class="space-y-base">
+<p class="text-label-caps font-label-caps text-secondary-fixed-variant uppercase">Legal Insight</p>
+<p class="text-body-md font-body-md text-on-secondary-container">Retaliation is illegal in many jurisdictions after filing a formal grievance.</p>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe bg-white dark:bg-slate-950 border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] z-50">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Home</span>
+</a>
+<!-- Learn (Active) -->
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Learn</span>
+</a>
+<!-- Legal Aid -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">gavel</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Legal Aid</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+<!-- FAB Suppression logic applied as per mandate for transactional/details content -->
+</body></html>

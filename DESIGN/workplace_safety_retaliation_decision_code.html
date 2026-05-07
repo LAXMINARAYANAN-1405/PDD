@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&amp;family=Public+Sans:wght@400;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#006c4e",
+                        "secondary-fixed-dim": "#92d4be",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#d6dbd6",
+                        "primary": "#00694c",
+                        "on-primary-fixed": "#002115",
+                        "surface": "#f5fbf5",
+                        "on-tertiary-container": "#f4fff9",
+                        "secondary-container": "#adf0da",
+                        "on-surface-variant": "#3d4943",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#008560",
+                        "outline": "#6d7a73",
+                        "on-secondary-fixed": "#002018",
+                        "surface-container-high": "#e4eae4",
+                        "on-surface": "#171d1a",
+                        "on-tertiary-fixed-variant": "#095041",
+                        "tertiary": "#276656",
+                        "surface-bright": "#f5fbf5",
+                        "on-secondary-fixed-variant": "#025140",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#b0efdb",
+                        "on-secondary-container": "#2e6f5d",
+                        "inverse-surface": "#2c322e",
+                        "surface-container": "#eaefea",
+                        "on-primary-fixed-variant": "#00513a",
+                        "tertiary-fixed-dim": "#94d3bf",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#86f8c9",
+                        "secondary": "#276958",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#bccac1",
+                        "inverse-on-surface": "#ecf2ed",
+                        "surface-variant": "#dee4de",
+                        "primary-fixed-dim": "#68dbae",
+                        "surface-container-low": "#eff5ef",
+                        "surface-container-highest": "#dee4de",
+                        "on-primary": "#ffffff",
+                        "on-background": "#171d1a",
+                        "tertiary-container": "#427f6e",
+                        "background": "#f5fbf5",
+                        "secondary-fixed": "#adf0da",
+                        "on-tertiary-fixed": "#002019",
+                        "inverse-primary": "#68dbae",
+                        "on-primary-container": "#f5fff7",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "12px",
+                        "base": "4px",
+                        "lg": "24px",
+                        "container-margin": "20px",
+                        "sm": "12px",
+                        "md": "16px",
+                        "xs": "8px",
+                        "xl": "32px"
+                    },
+                    "fontFamily": {
+                        "tamil-body": ["Noto Sans Tamil"],
+                        "h2": ["Poppins"],
+                        "body-lg": ["Public Sans"],
+                        "h1": ["Poppins"],
+                        "h3": ["Poppins"],
+                        "label-caps": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "lexend": ["Lexend"]
+                    },
+                    "fontSize": {
+                        "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                        "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16 sticky">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white cursor-pointer hover:bg-emerald-500/20 transition-colors p-2 rounded-full" data-icon="menu">menu</span>
+<span class="text-white font-lexend font-black text-xl">RightsQuest</span>
+</div>
+<span class="material-symbols-outlined text-white cursor-pointer hover:bg-emerald-500/20 transition-colors p-2 rounded-full" data-icon="account_circle">account_circle</span>
+</header>
+<main class="flex-grow container mx-auto px-container-margin py-lg flex flex-col max-w-2xl">
+<!-- Progress Bar Indicator -->
+<div class="w-full bg-primary/20 h-2 rounded-full mb-lg overflow-hidden">
+<div class="bg-primary h-full rounded-full w-3/4"></div>
+</div>
+<!-- Header Section -->
+<section class="mb-xl text-center">
+<h1 class="font-h1 text-primary text-h1 mb-base">Make your choice</h1>
+<h2 class="font-tamil-body text-primary text-h3 font-bold">உங்கள் முடிவை எடுங்கள்</h2>
+<div class="mt-md inline-block px-md py-xs bg-secondary-container text-on-secondary-container rounded-full text-label-caps font-label-caps">
+                CRITICAL DECISION POINT
+            </div>
+</section>
+<!-- Main Illustration/Mood Card -->
+<div class="relative w-full aspect-video rounded-xl overflow-hidden mb-xl border border-primary/10 shadow-sm">
+<img alt="Professional decision scene" class="w-full h-full object-cover" data-alt="A professional office setting with soft, high-key natural lighting creating an atmosphere of institutional trust. In the background, a modern conference room is visible through frosted glass. The primary color palette features deep forest greens and warm off-whites, echoing the design system's emerald tones. Two silhouettes represent a manager and an employee in a calm but serious discussion, emphasizing the gravity of a legal choice in a modern corporate landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuI4LOaRhu4W6BB_SkHOK7YH6G_7w0iadZjGEldKZUCkOc4UWXou0jW5UQpFDOsfpMSZNJ6ry1C3DYcw4x6La7ODatg59O93jOgcTS3HTYXT_xYEBCQxMoB2ICV7anwc2CD9_R61AH64cZ0n7vMpJ0p3mKataDi7MMVBSJqt1L3cZh6uielmo1-rgnH2tsaUhcNXXXBH5rVGmDgvTTaLJMKa65d2jtsum3-W1LFl79MNVN7GHgnJgqbu6z6W0qCWkvVIq0zg3mLnht"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<p class="absolute bottom-md left-md right-md text-white font-h3 text-h3 leading-tight">What do you do next?</p>
+</div>
+<!-- Options Container -->
+<div class="space-y-md mb-xl">
+<!-- Option 1 -->
+<button class="w-full text-left bg-surface-container-lowest border border-outline/10 hover:border-primary/40 hover:bg-surface-container-low transition-all duration-200 p-md rounded-xl flex items-start gap-md group">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shrink-0 group-hover:bg-primary-fixed-dim transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="block">block</span>
+</div>
+<div class="flex flex-col gap-1">
+<p class="font-body-md text-on-surface font-semibold">Accept the transfer silently or resign in frustration.</p>
+<p class="font-tamil-body text-outline text-sm leading-relaxed">(இடமாற்றத்தை அமைதியாக ஏற்றுக்கொள்வது அல்லது விரக்தியில் பதவி விலகுவது.)</p>
+</div>
+</button>
+<!-- Option 2 -->
+<button class="w-full text-left bg-surface-container-lowest border border-outline/10 hover:border-primary/40 hover:bg-surface-container-low transition-all duration-200 p-md rounded-xl flex items-start gap-md group">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shrink-0 group-hover:bg-primary-fixed-dim transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="mood_bad">mood_bad</span>
+</div>
+<div class="flex flex-col gap-1">
+<p class="font-body-md text-on-surface font-semibold">Angrily confront your manager about the unfair transfer.</p>
+<p class="font-tamil-body text-outline text-sm leading-relaxed">(நியாயமற்ற இடமாற்றம் குறித்து மேலாளரிடம் கோபமாக வாக்குவாதம் செய்வது.)</p>
+</div>
+</button>
+<!-- Option 3 (The Recommended Path Highlighted) -->
+<button class="w-full text-left bg-primary-container/10 border-2 border-primary hover:bg-primary-container/20 transition-all duration-200 p-md rounded-xl flex items-start gap-md group shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-white" data-icon="gavel" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<div class="flex flex-col gap-1">
+<p class="font-body-md text-on-surface font-bold">File a written complaint to the ICC regarding "retaliation."</p>
+<p class="font-tamil-body text-primary text-sm leading-relaxed font-medium">(பழிவாங்கும் நடவடிக்கை குறித்து உள்ளகப் புகார் குழுவிடம் (ICC) எழுத்துப்பூர்வ புகார் அளிப்பது.)</p>
+</div>
+<div class="ml-auto">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+</div>
+<!-- Instructional Note -->
+<div class="bg-surface-container-high p-md rounded-xl border border-outline/10 flex gap-md items-center mb-lg">
+<span class="material-symbols-outlined text-tertiary" data-icon="info">info</span>
+<p class="text-on-surface-variant text-sm font-body-md italic leading-tight">Choosing to file a formal complaint is often the most legally sound path to protect your rights.</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<!-- Active State Logic: Home is currently active as this is a core module step -->
+<nav class="bg-white dark:bg-slate-950 docked full-width bottom-0 z-50 rounded-t-2xl border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe">
+<div class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 active:scale-95 duration-150 cursor-pointer">
+<span class="material-symbols-outlined active-icon" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-0.5">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors active:scale-95 duration-150 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-0.5">Learn</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors active:scale-95 duration-150 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-0.5">Legal Aid</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors active:scale-95 duration-150 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-0.5">Profile</span>
+</div>
+</nav>
+<!-- Spacer for Bottom Nav -->
+<div class="h-24"></div>
+</body></html>

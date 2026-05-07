@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;family=Public+Sans:wght@400;700&amp;family=Poppins:wght@500;600&amp;family=Noto+Sans+Tamil:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#276656",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#f4fff9",
+                    "on-primary-fixed-variant": "#00513a",
+                    "tertiary-fixed": "#b0efdb",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f5fbf5",
+                    "inverse-surface": "#2c322e",
+                    "on-surface-variant": "#3d4943",
+                    "inverse-on-surface": "#ecf2ed",
+                    "surface-container-low": "#eff5ef",
+                    "on-surface": "#171d1a",
+                    "secondary-fixed-dim": "#92d4be",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#86f8c9",
+                    "on-tertiary-fixed-variant": "#095041",
+                    "secondary-fixed": "#adf0da",
+                    "on-secondary-fixed-variant": "#025140",
+                    "surface-tint": "#006c4e",
+                    "on-tertiary-fixed": "#002019",
+                    "secondary-container": "#adf0da",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#bccac1",
+                    "primary-container": "#008560",
+                    "outline": "#6d7a73",
+                    "primary": "#00694c",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#e4eae4",
+                    "surface-container": "#eaefea",
+                    "on-secondary-fixed": "#002018",
+                    "tertiary-fixed-dim": "#94d3bf",
+                    "surface-container-highest": "#dee4de",
+                    "inverse-primary": "#68dbae",
+                    "primary-fixed-dim": "#68dbae",
+                    "on-primary-fixed": "#002115",
+                    "surface-variant": "#dee4de",
+                    "surface-bright": "#f5fbf5",
+                    "on-background": "#171d1a",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#427f6e",
+                    "surface-dim": "#d6dbd6",
+                    "secondary": "#276958",
+                    "surface": "#f5fbf5",
+                    "on-secondary-container": "#2e6f5d",
+                    "on-primary-container": "#f5fff7",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "16px",
+                    "base": "4px",
+                    "container-margin": "20px",
+                    "sm": "12px",
+                    "gutter": "12px",
+                    "xl": "32px",
+                    "xs": "8px",
+                    "lg": "24px"
+            },
+            "fontFamily": {
+                    "lexend": ["Lexend", "sans-serif"],
+                    "body-lg": ["Public Sans"],
+                    "tamil-body": ["Noto Sans Tamil"],
+                    "h3": ["Poppins"],
+                    "h2": ["Poppins"],
+                    "h1": ["Poppins"],
+                    "body-md": ["Public Sans"],
+                    "label-caps": ["Public Sans"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Lexend', sans-serif; background-color: #f5fbf5; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 text-white dark:text-emerald-50 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16">
+<div class="flex items-center gap-4">
+<button class="hover:bg-emerald-500/20 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-lexend font-black text-xl text-white">RightsQuest</h1>
+</div>
+<div class="flex items-center gap-3">
+<button class="hover:bg-emerald-500/20 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<main class="min-h-screen pb-32 pt-20 px-container-margin max-w-2xl mx-auto">
+<!-- Result Header Section -->
+<div class="flex flex-col items-center text-center mb-lg">
+<div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mb-md shadow-sm border border-amber-200">
+<span class="material-symbols-outlined text-amber-600 text-5xl" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<h2 class="font-lexend font-bold text-h2 text-tertiary">The Outcome · முடிவு</h2>
+</div>
+<!-- Result Card -->
+<div class="bg-white border border-on-surface/10 rounded-[14px] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.05)] mb-lg">
+<!-- Alert Banner -->
+<div class="bg-amber-500 px-md py-xs">
+<h3 class="font-lexend font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">error</span>
+                    Unofficial Action · வீணான சிக்கல்
+                </h3>
+</div>
+<div class="p-lg space-y-md">
+<p class="font-body-lg text-on-surface-variant leading-relaxed">
+                    'You caused a scene, but HR warned you for unprofessional behavior. Without a formal written complaint, there is no official investigation into the actual harassment.'
+                </p>
+<div class="pt-4 border-t border-surface-container-high">
+<p class="font-tamil-body text-on-surface text-lg font-medium leading-relaxed">
+                        'நீங்கள் அனைவர் முன்பும் சத்தமிட்டீர்கள், ஆனால் நிர்வாகம் உங்களைத்தான் கண்டித்தது. முறையான எழுத்துப்பூர்வ புகார் இல்லாமல், இந்த பிரச்சனை குறித்து எந்த அதிகாரப்பூர்வ விசாரணையும் நடக்காது.'
+                    </p>
+</div>
+</div>
+</div>
+<!-- Illustration / Visual Anchor -->
+<div class="relative w-full aspect-video rounded-xl overflow-hidden mb-lg border border-on-surface/5">
+<img class="w-full h-full object-cover" data-alt="A cinematic, high-contrast photograph of an empty, modern corporate office hallway with long shadows casting across the polished floor. The lighting is cold and clinical, creating an atmosphere of institutional isolation and tension. The deep green and emerald tones of the interior design are contrasted with a stark, bright light at the end of the corridor, symbolizing a path yet to be found. The visual style is authoritative and serious, aligning with a professional legal learning environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqO8JhBnWFidqUFM1C-z0uQi9leSwYAvE9brJeCfZWo-eUy5_opI4-eqY0c4Co9gb3NMi_q-Azxc0Jv9u22-4WWxP_ZqEDCBtGTYKvvNCNKhZcOeCghpke6dr2Th9C8Ks3lIWtw7yJbFeM2GqSqEcgkHHpc-j4qYJGwFmTISle7kgoQqn_br-X5jWSzhmXpYNP0g_lAc6lYxDEOS2z0b1372-UHSpYDbgkLL2TcHgEfdJF9GwMqf2ueW43uX9ETNuEhxXQVvrOCD-8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+<!-- Suggestion & Action -->
+<div class="bg-surface-container-low border border-primary/10 rounded-xl p-md mb-xl flex flex-col items-center text-center">
+<p class="font-lexend font-medium text-tertiary mb-md">
+                Anger is justified, but a formal process is safer. Let's look at the correct steps.
+            </p>
+<button class="bg-primary hover:bg-primary-container text-white px-xl py-md rounded-xl font-lexend font-bold transition-all transform active:scale-95 shadow-md flex items-center gap-3">
+<span class="material-symbols-outlined">undo</span>
+                Try another route · வேறு முடிவை முயற்சிக்கவும்
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe bg-white dark:bg-slate-950 border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] z-50 rounded-t-2xl">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Learn</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5 active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">gavel</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Legal Aid</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>

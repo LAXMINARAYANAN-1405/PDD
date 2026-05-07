@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;family=Public+Sans:wght@400;700&amp;family=Poppins:wght@500;600&amp;family=Noto+Sans+Tamil:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #f5fbf5;
+        }
+        .font-lexend { font-family: 'Lexend', sans-serif; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#276656",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#f4fff9",
+                        "on-primary-fixed-variant": "#00513a",
+                        "tertiary-fixed": "#b0efdb",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f5fbf5",
+                        "inverse-surface": "#2c322e",
+                        "on-surface-variant": "#3d4943",
+                        "inverse-on-surface": "#ecf2ed",
+                        "surface-container-low": "#eff5ef",
+                        "on-surface": "#171d1a",
+                        "secondary-fixed-dim": "#92d4be",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#86f8c9",
+                        "on-tertiary-fixed-variant": "#095041",
+                        "secondary-fixed": "#adf0da",
+                        "on-secondary-fixed-variant": "#025140",
+                        "surface-tint": "#006c4e",
+                        "on-tertiary-fixed": "#002019",
+                        "secondary-container": "#adf0da",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#bccac1",
+                        "primary-container": "#008560",
+                        "outline": "#6d7a73",
+                        "primary": "#00694c",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e4eae4",
+                        "surface-container": "#eaefea",
+                        "on-secondary-fixed": "#002018",
+                        "tertiary-fixed-dim": "#94d3bf",
+                        "surface-container-highest": "#dee4de",
+                        "inverse-primary": "#68dbae",
+                        "primary-fixed-dim": "#68dbae",
+                        "on-primary-fixed": "#002115",
+                        "surface-variant": "#dee4de",
+                        "surface-bright": "#f5fbf5",
+                        "on-background": "#171d1a",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#427f6e",
+                        "surface-dim": "#d6dbd6",
+                        "secondary": "#276958",
+                        "surface": "#f5fbf5",
+                        "on-secondary-container": "#2e6f5d",
+                        "on-primary-container": "#f5fff7",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "base": "4px",
+                        "container-margin": "20px",
+                        "sm": "12px",
+                        "gutter": "12px",
+                        "xl": "32px",
+                        "xs": "8px",
+                        "lg": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Public Sans"],
+                        "tamil-body": ["Noto Sans Tamil"],
+                        "h3": ["Poppins"],
+                        "h2": ["Poppins"],
+                        "h1": ["Poppins"],
+                        "body-md": ["Public Sans"],
+                        "label-caps": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "tamil-body": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                        "h3": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+                        "h2": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "h1": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed-variant">
+<!-- Top Navigation Bar -->
+<header class="bg-emerald-600 dark:bg-emerald-900 docked full-width top-0 z-50 border-b border-emerald-700 dark:border-emerald-800 shadow-sm flex justify-between items-center w-full px-5 py-3 h-16 fixed">
+<div class="flex items-center gap-3">
+<button class="text-white hover:bg-emerald-500/20 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-white font-lexend font-black text-xl tracking-tight">RightsQuest</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-emerald-100 opacity-80 hover:bg-emerald-500/20 transition-colors px-3 py-1 rounded font-lexend font-medium hidden md:block">Explore</button>
+<button class="text-white font-bold opacity-100 hover:bg-emerald-500/20 transition-colors px-3 py-1 rounded font-lexend font-medium hidden md:block">Learn</button>
+<button class="text-white hover:bg-emerald-500/20 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-container-margin max-w-2xl mx-auto">
+<!-- Header Section -->
+<section class="mb-lg">
+<div class="flex flex-col gap-xs">
+<span class="text-primary font-label-caps text-label-caps uppercase tracking-[0.2em]">Legal Insight</span>
+<h2 class="text-primary font-lexend font-extrabold text-2xl leading-tight">
+                    Know Your Rights · உங்கள் உரிமையை जानுங்கள்
+                </h2>
+</div>
+</section>
+<!-- Bento Layout Content -->
+<div class="grid grid-cols-1 gap-md">
+<!-- Hero Image with Prompt -->
+<div class="relative w-full h-48 rounded-xl overflow-hidden mb-xs shadow-sm">
+<img alt="Professional workplace and legal gavel" class="w-full h-full object-cover" data-alt="A cinematic, high-quality photograph of a modern, bright office environment with a focus on an elegant wooden legal gavel resting on a clean white desk surface. Soft sunlight filters through large windows, highlighting the deep emerald green and off-white office decor. The composition is clean and minimalist, conveying a sense of authoritative justice and professional safety. The lighting is bright and airy, reflecting a modern corporate aesthetic with high-contrast clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSZmx5b83jDigSk-q8zC--eEbjuqzVUbrl8283KRFwfgKE8VUqcvMFiiSwZ_joSbl4Tjs-WUMMcr9CDIdQi0KiZ7E5Gaj1bnm4W8_xcm6D23yZxPPCGYhksF4bYhqIze9HfdW4msgehKhDlNJIHI1j_7syLKLoyD_he2nerj7G1lJPqZmJvhD9Tfpv2Xiv6Ghsaj9mrn1NtRvDpWZKdWcxXc2LkpDyZVquaQPRfoi0OJSQ6IlWPQ2GwdF6T7fhDAbi4veMttVMsnpR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+<!-- Law Box (Mandatory POSH Law Content) -->
+<article class="bg-primary p-xl rounded-[14px] shadow-lg border border-primary-container relative overflow-hidden">
+<!-- Background Decoration -->
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-on-primary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 space-y-md">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-on-primary" style="font-variation-settings: 'FILL' 1;">gavel</span>
+<h3 class="text-on-primary font-lexend font-bold text-xl tracking-tight">POSH Act, 2013</h3>
+</div>
+<div class="space-y-lg">
+<!-- English Content -->
+<div class="space-y-xs">
+<span class="text-primary-fixed font-label-caps text-[10px] opacity-90">ENGLISH SUMMARY</span>
+<p class="text-white font-body-md text-body-md leading-relaxed">
+                                Every workplace with 10 or more employees <span class="font-bold underline decoration-secondary-fixed">MUST</span> constitute an Internal Complaints Committee (ICC). Employees have the right to a safe working environment, and formal complaints of sexual harassment must be investigated confidentially.
+                            </p>
+</div>
+<!-- Divider -->
+<div class="h-px w-full bg-white/20"></div>
+<!-- Tamil Content -->
+<div class="space-y-xs">
+<span class="text-primary-fixed font-label-caps text-[10px] opacity-90">தமிழ் சுருக்கம்</span>
+<p class="text-white font-tamil-body text-tamil-body leading-relaxed">
+                                10 அல்லது அதற்கு மேற்பட்ட ஊழியர்கள் உள்ள ஒவ்வொரு பணியிடத்திலும் உள்ளகப் புகார் குழு (ICC) அமைக்கப்பட வேண்டும். பாதுகாப்பான பணிச்சூழல் ஊழியர்களின் உரிமை, மேலும் பாலியல் துன்புறுத்தல் குறித்த புகார்கள் ரகசியமாக விசாரிக்கப்பட வேண்டும்.
+                            </p>
+</div>
+</div>
+</div>
+</article>
+<!-- Action Button Area -->
+<div class="mt-md">
+<button class="w-full bg-primary hover:bg-on-primary-fixed-variant transition-all duration-300 text-white font-lexend font-bold py-4 px-6 rounded-[10px] flex items-center justify-center gap-sm shadow-md active:scale-[0.98]">
+<span class="material-symbols-outlined">auto_awesome</span>
+                    Generate My Summary · என் சுருக்கத்தை உருவாக்கு
+                </button>
+<p class="text-center text-outline text-[11px] mt-sm font-medium uppercase tracking-wide">
+                    Powered by RightsQuest Legal Engine
+                </p>
+</div>
+<!-- Contextual Information Card -->
+<div class="grid grid-cols-2 gap-sm">
+<div class="bg-white border border-on-surface/10 p-md rounded-[14px] flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<span class="font-lexend font-bold text-sm text-on-surface">Legal Validity</span>
+<span class="text-xs text-outline font-body-md">Statutory Law</span>
+</div>
+<div class="bg-white border border-on-surface/10 p-md rounded-[14px] flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary">security</span>
+<span class="font-lexend font-bold text-sm text-on-surface">Confidentiality</span>
+<span class="text-xs text-outline font-body-md">Strictly Enforced</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="bg-white dark:bg-slate-950 docked full-width bottom-0 z-50 rounded-t-2xl border-t border-emerald-100 dark:border-emerald-900/50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-xl px-3 py-1.5" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Learn</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">gavel</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Legal Aid</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-500 transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-lexend font-medium text-[10px] uppercase tracking-wider mt-1">Profile</span>
+</a>
+</nav>
+</body></html>
